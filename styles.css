@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -39,11 +41,11 @@ body {
 }
 
 .body-text {
-  margin-top: 225px; 
+  margin-top: 225px;
   color: rgba(255, 255, 255, 1);
-   width: 398px;
- height: 346px; 
-  margin-inline: 165px;  
+  width: 398px;
+  height: 346px;
+  margin-inline: 165px;
 }
 
 .product {
@@ -64,6 +66,9 @@ body {
 .second-p {
   font-size: 15px;
   font-weight: 400;
+  color: rgba(255, 255, 255, 75%);
+  line-height: 25px;
+  text-align: center;
 }
 .button {
   border: none;
@@ -73,30 +78,32 @@ body {
 }
 .button:hover {
   background-color: rgba(251, 175, 133, 1);
-}  
+}
 
 @media (max-width: 768px) {
   body {
     background-image: url(./img/bitma\ tablet.png);
-  
   }
   .container {
     margin-inline: 39px;
-    border: 2px solid rgb(122, 201, 19);
   }
   .container ul {
     display: none;
-    
   }
   .site-logo {
     margin-left: -45%;
-    border: 2px solid rgb(108, 24, 187);
   }
   .body-text {
-    /* margin-inline: 39px;  */
-    margin-top: 140px; 
-    border: 2px solid red;
-  
+    margin-inline: 220px;
+    margin-top: 140px;
+  }
+  .button {
+    margin-inline: 90px;
+  }
+  .second-p {
+    width: 349px;
+
+    align: center;
   }
 }
 @media (min-width: 769px) {
@@ -109,7 +116,6 @@ body {
     margin: auto;
   }
   body {
-   
     background-image: url(./img/Bitmap\ mobile8.png);
   }
 }
@@ -118,12 +124,10 @@ body {
     margin: auto;
   }
   body {
-    
     background-image: url(./img/Bitmap\ mob\ s.png);
   }
-  .body-text{
+  .body-text {
     height: 100px;
-     margin-inline: 20px; 
+    margin-inline: 20px;
   }
-
 }
