@@ -118,6 +118,10 @@ body {
   body {
     background-image: url(./img/Bitmap\ mobile8.png);
   }
+  .body-text {
+    margin-inline: 20px;
+    text-align: center;
+  }
 }
 @media (max-width: 375px) {
   .site-logo {
@@ -127,7 +131,13 @@ body {
     background-image: url(./img/Bitmap\ mob\ s.png);
   }
   .body-text {
-    height: 100px;
-    margin-inline: 20px;
+  margin-inline: -24px;
+
   }
+  .second-p {
+    margin-left: 45px;
+
+    align: center;
+  }
+
 }
