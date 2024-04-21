@@ -23,7 +23,7 @@ body {
   margin: auto;
   list-style: none;
   justify-content: space-between;
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: 400;
 }
 
@@ -31,6 +31,9 @@ body {
   padding: 10px;
   text-decoration: none;
   color: #fff;
+}
+.container a:hover {
+  color: rgba(251, 175, 133, 1);
 }
 
 .cart {
@@ -110,6 +113,15 @@ body {
   .toggle {
     display: none;
   }
+
+  .body-text {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    margin-inline: 90px;
+  }
 }
 @media (max-width: 425px) {
   .site-logo {
@@ -131,13 +143,16 @@ body {
     background-image: url(./img/Bitmap\ mob\ s.png);
   }
   .body-text {
-  margin-inline: -24px;
-
+    margin-inline: -24px;
   }
   .second-p {
     margin-left: 45px;
 
     align: center;
   }
-
+}
+@media (max-width: 320px) {
+  .container {
+    margin-inline: 20px;
+  }
 }
