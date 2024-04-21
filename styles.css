@@ -38,41 +38,42 @@ body {
   margin-right: auto;
 }
 @media (max-width: 768px) {
-    body {
-        background-image: url(./img/bitma\ tablet.png);
-        background-position: cover;
-    }
-    .container{
-        margin-inline: 39px;
-    }
+  body {
+    background-image: url(./img/bitma\ tablet.png);
+    background-position: cover;
+  }
+  .container {
+    margin-inline: 39px;
+  }
   .container ul {
     display: none;
-  
-    background-position: center;
 
-  
+    background-position: center;
   }
   .site-logo {
     margin-left: -45%;
   }
 }
 @media (min-width: 769px) {
-    .toggle {
-        display: none;
-      }
+  .toggle {
+    display: none;
+  }
 }
-@media (max-width:425px) {
-    .site-logo {
-        margin: auto;
-      }
-      body {
-        
-        background-color: #141414;
-      background-image: url(./img/Bitmap\ 7.png); */
-     background-repeat: no-repeat;
-     overscroll-behavior-block: center;
-         
-      
-      }
-      
+@media (max-width: 425px) {
+  .site-logo {
+    margin: auto;
+  }
+  body {
+   
+    background-image: url(./img/Bitmap\ mobile8.png);
+  }
+}
+@media (max-width: 375px) {
+  .site-logo {
+    margin: auto;
+  }
+  body {
+    
+    background-image: url(./img/Bitmap\ mob\ s.png);
+  }
 }
