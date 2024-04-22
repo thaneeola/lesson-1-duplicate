@@ -8,28 +8,34 @@
 
 body {
   background-image: url(./img/Bitmap2.png);
-  max-width: 100%;
+ max-width: 100%; 
+  
 }
 
 .container {
   display: flex;
   border-bottom: 2px solid rgba(151, 151, 151, 1);
+
   padding-bottom: 32px;
   margin-inline: 165px;
   margin-block: 30px;
+    
 }
 .container ul {
   display: flex;
-  margin: auto;
+   margin-left: 200px;
   list-style: none;
   justify-content: space-between;
   /* font-size: 20px; */
   font-weight: 400;
+  border: 2px solid red;
+position: absolute;
 }
 
 .container ul a {
   padding: 10px;
-  text-decoration: none;
+  text-decoration: none; 
+ 
   color: #fff;
 }
 .container a:hover {
