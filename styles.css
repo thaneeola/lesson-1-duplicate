@@ -12,9 +12,8 @@ body {
 .container {
   display: flex;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
-  padding-block: 32px;
-  padding-inline: 150px; 
-  background-color: black;
+  padding-block: 32px; 
+  background-color: #141414;
   position: relative;
 }
 
@@ -226,9 +225,8 @@ border: none;
   } 
 
    .container {
-    padding-inline: 0;
-    margin-inline: 36px;
-
+  margin-inline: 37px;
+padding-inline: 0;
   } 
   .container ul {
     display: none;
