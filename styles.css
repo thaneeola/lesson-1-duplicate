@@ -155,7 +155,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 300px;
+  margin-bottom: 40px;
   padding: 30px;
   height: 260px;
   background-repeat: no-repeat;
@@ -176,6 +176,32 @@
   margin-top: 30px;
   background-color: transparent;
   border: 2px solid black;
+}
+.earphones-image {
+  background-image: url("./img/earphones.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+ 
+  height: 100%;
+}
+.Earphones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   gap:30px;
+  margin-bottom: 40px;
+
+  height: 260px;
+
+  background-color: #c2c2c2;
+
+ 
+}
+.earphones-text{
+  border: 2px solid;
+  padding-left: -60px;
 }
 
 /*res for tab*/
@@ -292,6 +318,15 @@
   .speak {
     width: 100%;
   }
+  .Earphones{
+    flex-direction: row;
+  }
+  .earphones-image {
+
+    background-position: -1% 50%;
+   
+  }
+
 }
 /*res for laptops*/
 @media (min-width: 1024px) {
@@ -312,7 +347,6 @@
 
   .body-text {
     padding-left: 165px;
-   
   }
   /* .new-tabs p {
     margin-top: 20px;
@@ -347,9 +381,20 @@
   .speak {
     width: 100%;
   }
-.speaker-table{
-  background-position: 100%;
-}
+  .speaker-table {
+    background-position: 100%;
+  }
+  .Earphones{
+    flex-direction: row;
+  }
+  .earphones-image {
+    background-image: url("./img/earphones.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: -1% 50%; 
+   
+    height: 100%;
+  }
 }
 /*res for phone*/
 @media (max-width: 744px) {
