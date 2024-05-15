@@ -6,7 +6,6 @@
   font-family: sans-serif;
 }
 
-
 .container {
   display: flex;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
@@ -34,6 +33,10 @@
   font-size: 15px;
   /* margin: auto; */
   text-decoration: none;
+}
+
+.container ul a:hover {
+  color: #d87d4a;
 }
 .body-text {
   background-image: url("./img/Bitmap\ laptops.png");
@@ -66,7 +69,7 @@
 
   opacity: 0.5;
 }
- .oyin h1 {
+.oyin h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -74,7 +77,6 @@
   color: #f1f1f1;
   letter-spacing: 1.28571px;
   text-transform: uppercase;
- 
 }
 .oyin p {
   font-size: 15px;
@@ -89,7 +91,6 @@
   color: #f1f1f1;
   background-color: #d87d4a;
   border: none;
-
 }
 .body-button {
   background-color: white;
@@ -98,11 +99,10 @@
   padding-block: 100px;
   justify-content: center;
 }
-.main-body{
+.main-body {
   padding-inline: 24px;
-
 }
-.speaker-section{
+.speaker-section {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -112,19 +112,13 @@
   width: 300px;
   padding-block: 20px;
   text-align: center;
-
-
-  
 }
-.tr{
- 
+.tr {
   background-color: #d87d4a;
   margin-bottom: 100px;
-  
- 
 }
 
-.speaker  h1{
+.speaker h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -140,13 +134,12 @@
 .speaker p {
   font-size: 15px;
   line-height: 25px;
-   color: #f1f1f1;
-   width: 280px;
+  color: #f1f1f1;
+  width: 280px;
   opacity: 0.75;
 }
-.speak{
+.speak {
   width: 180px;
- 
 }
 .speaker button {
   margin-block: 50px;
@@ -166,27 +159,27 @@
   padding: 30px;
   height: 260px;
   background-repeat: no-repeat;
-  background-color:#C2C2C2;
+  background-color: #c2c2c2;
+
   background-image: url("./img/speaker-table.png");
-  /* background-position: 100%; */
+  background-position: 50% 50%;
 }
-.speaker-table-img img{
+.speaker-table-img img {
   width: 100%;
 }
-.speaker-table button{
+
+.speaker-table button {
   padding-block: 15px;
   padding-inline: 31px;
   width: 160px;
   color: black;
+  margin-top: 30px;
   background-color: transparent;
   border: 2px solid black;
 }
 
-
 /*res for tab*/
 @media (min-device-width: 745px) and (max-device-width: 1024px) {
-  
-
   .container {
     padding-inline: 39px;
   }
@@ -242,7 +235,7 @@
     justify-content: center;
     align-items: center;
   }
-  .main-body{
+  .main-body {
     padding-inline: 39px;
   }
   .oyin {
@@ -288,7 +281,7 @@
     background-color: #d87d4a;
     border: none;
   }
-  .speaker-section{
+  .speaker-section {
     flex-direction: row;
     margin: auto;
     gap: 70px;
@@ -296,7 +289,7 @@
     padding-block: 20px;
     text-align: center;
   }
-  .speak{
+  .speak {
     width: 100%;
   }
 }
@@ -319,6 +312,7 @@
 
   .body-text {
     padding-left: 165px;
+   
   }
   /* .new-tabs p {
     margin-top: 20px;
@@ -334,14 +328,14 @@
     /* margin-block: 30px;   */
     text-align: center;
   }
-  .main-body{
+  .main-body {
     padding-inline: 165px;
   }
   .text img {
     margin-top: -40px;
   }
 
-  .speaker-section{
+  .speaker-section {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -349,13 +343,13 @@
     width: 600px;
     padding-block: 20px;
     text-align: center;
-  
-  
-    
   }
-  .speak{
+  .speak {
     width: 100%;
   }
+.speaker-table{
+  background-position: 100%;
+}
 }
 /*res for phone*/
 @media (max-width: 744px) {
