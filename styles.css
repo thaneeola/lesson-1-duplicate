@@ -13,6 +13,9 @@
   background-color: #141414;
   position: relative;
 }
+img {
+  max-inline-size: 100%;
+}
 
 .cart {
   margin-left: auto;
@@ -33,6 +36,7 @@
   font-size: 15px;
   /* margin: auto; */
   text-decoration: none;
+  transition: color 500ms ease-in-out;
 }
 
 .container ul a:hover {
@@ -91,6 +95,10 @@
   color: #f1f1f1;
   background-color: #d87d4a;
   border: none;
+  transition: background-color 300ms ease-in-out;
+}
+.oyin button:hover {
+  background-color: #fbaf85;
 }
 .body-button {
   background-color: white;
@@ -149,6 +157,10 @@
   color: #f1f1f1;
   background-color: black;
   border: none;
+  transition: background-color 500ms ease-in-out 50ms;
+}
+.speaker button:hover {
+  background-color: #4c4c4c;
 }
 .speaker-table {
   display: flex;
@@ -168,55 +180,86 @@
   width: 100%;
 }
 
-.speaker-table button {
+.button {
   padding-block: 15px;
   padding-inline: 31px;
   width: 160px;
+  font-size: 13px;
+  font-weight: 700;
   color: black;
   margin-top: 30px;
   background-color: transparent;
   border: 2px solid black;
+  transition: color 500ms ease-in-out 50ms,
+    background-color 500ms ease-in-out 50ms;
+}
+.button:hover {
+  background-color: #000000;
+  color: #ffff;
 }
 .earphones-image {
   background-image: url("./img/earphones.jpg");
   width: 100%;
+
   background-repeat: no-repeat;
   background-position: 50% 50%;
- 
+
   height: 260px;
 }
 .Earphones {
   display: flex;
   flex-direction: column;
-  
+
   align-items: center;
-   gap:24px;
+  gap: 20px;
   margin-bottom: 40px;
-
-  
-
-  background-color: #c2c2c2;
-
- 
 }
-.earphones-text{
-  
-   background-color: #f1f1f1;
-  padding:30px;
+.earphones-text {
+  background-color: #f1f1f1;
+
+  padding: 55px;
 }
-.Earphones  button {
-  padding-block: 15px;
-  padding-inline: 31px;
-  /* width: 160px; */
-  color: black;
- 
-  margin-top: 30px;
-  background-color: transparent;
-  border: 2px solid black;
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  align-items: center;
+
+  gap: 30px;
+}
+.profile picture {
+  grid-area: 1/1/3/4;
+  /* width:300px ; */
+  /* height: 350px; */
+}
+
+.profile-text {
+  grid-area: 4/1/3/4;
+  /* width: 400px; */
+  /* Bringing you the bes */
+}
+
+.profile-text h1 {
+  font-size: 6vh;
+
+  font-family: "Manrope";
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.profile-text h1 span {
+  color: #d87d4a;
 }
 
 /*res for tab*/
-@media (min-device-width: 745px) and (max-device-width: 1024px) {
+@media (min-device-width: 792px) and (max-device-width: 1024px) {
   .container {
     padding-inline: 39px;
   }
@@ -329,15 +372,30 @@
   .speak {
     width: 100%;
   }
-  .Earphones{
+  .Earphones {
     flex-direction: row;
   }
+  .earphones-text {
+    width: 40%;
+    height: 100%;
+    padding: 75px;
+  }
   .earphones-image {
-
+    width: 40%;
+    background-image: url("./img/earphone-tab.jpg");
     background-position: -1% 50%;
-   
   }
 
+  .profile picture {
+    grid-area: 1/7/3/11;
+  }
+  .profile-text {
+    grid-area: 1/1/3/6;
+  }
+  .profile-text h1 {
+    font-size: 5vh;
+    width: 300px;
+  }
 }
 /*res for laptops*/
 @media (min-width: 1024px) {
@@ -395,20 +453,42 @@
   .speaker-table {
     background-position: 100%;
   }
-  .Earphones{
+  .Earphones {
     flex-direction: row;
   }
-  .earphones-image {
-    background-image: url("./img/earphones.jpg");
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: -1% 50%; 
-   
+  .earphones-text {
+    width: 40%;
     height: 100%;
+    padding: 60px;
+  }
+  .earphones-image {
+    width: 40%;
+    background-position: 5% 50%;
+  }
+
+  .profile picture {
+    grid-area: 1/7/3/11;
+  }
+  .profile-text {
+    grid-area: 1/2/3/6;
+    width: 450px;
+  }
+  .profile-text h1 {
+    font-size: 5vh;
+    text-transform: uppercase;
+    width: 300px;
+  }
+  .profile-text p {
+   
+    width: 300px;
+  }
+
+  .profile-text h1 span {
+    color: #d87d4a;
   }
 }
 /*res for phone*/
-@media (max-width: 744px) {
+@media (max-width: 793px) {
   body {
     background-color: white;
   }
