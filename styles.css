@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Manrope";
 }
 
 .container {
@@ -262,6 +262,7 @@ img {
   text-transform: uppercase;
  text-align: center;
   color: #000000;
+  margin-top: 20px;
 }
 .profile-text h1 span {
   color: #d87d4a;
@@ -283,7 +284,57 @@ mix-blend-mode: normal;
 opacity: 0.5;
 
 }
+footer{
+text-align: center;
 
+/* text-align: center;  */
+background: #101010;
+padding: 30px;
+
+}
+.footer-link ul{
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  margin-block: 20px;
+
+}
+.footer-link ul a {
+  color: #ffff;
+  font-size: 15px;
+font-weight: 400;
+  text-decoration: none;
+  transition: color 500ms ease-in-out;
+}
+footer p{
+  font-size: 15px;
+  line-height: 25px;
+  color: #f1f1f1;
+  margin-block: 40px;
+  /* width: 280px; */
+  text-align: center;
+  opacity: 0.3;
+}
+.footer-icon p {
+  margin-block: 50px;
+}
+.footer-icon{
+  display: flex;
+  flex-direction: column;
+}
+.fa-brands{
+  font-size: 24px;
+  color: #f1f1f1;
+  /* background-color: #d87d4a; */
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 /*res for tab*/
 @media (min-device-width: 792px) and (max-device-width: 1024px) {
   .container {
@@ -424,6 +475,32 @@ opacity: 0.5;
     font-size: 30px;
     width: 300px;
   }
+  .footer-link ul{
+    flex-direction: row;
+    gap: 30px;
+    margin-block: 40px;
+  }
+  footer{
+    text-align: start;
+  }
+  footer p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #f1f1f1;
+    /* width: 280px; */
+    text-align: start;
+    opacity: 0.6;
+  }
+  .footer-icon{
+
+    flex-direction:row;
+  }
+  .icons{
+    margin-left: auto;
+  }
+  .footer-icon p {
+    margin-block: 30px 1px;
+  }
 }
 /*res for laptops*/
 @media (min-width: 1024px) {
@@ -515,6 +592,39 @@ opacity: 0.5;
   .profile-text h1 span {
     color: #d87d4a;
   }
+
+
+footer{
+  text-align: start;
+}
+.footer-link ul{
+  flex-direction: row;
+  gap: 30px;
+  /* margin-block: 40px; */
+  justify-content: end;
+}
+footer p{
+  font-size: 15px;
+  line-height: 25px;
+  color: #f1f1f1;
+  /* width: 280px; */
+  text-align: start;
+  opacity: 0.6;
+}
+.footer-icon{
+
+  flex-direction:row;
+}
+.icons{
+  margin-left: auto;
+}
+.footer-icon p {
+  margin-block: 30px 1px;
+}
+.logo{
+  display: flex;
+
+}
 }
 /*res for phone*/
 @media (max-width: 793px) {
