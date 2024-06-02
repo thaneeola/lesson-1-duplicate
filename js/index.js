@@ -10,3 +10,60 @@ function show() {
     link.style.display = "flex";
   }
 }
+// import image1 from './img/Bitmap (1).png';
+// import image2 from './img/speaker.png'
+// import image3 from './img/profile.png'
+const heroSection = document.querySelector(".body-text");
+const images = [
+  "url('./img/EAR3.png')",
+  "url('./img/image (1).png')",
+  "url('./img/EAR.png')"
+];
+let currentIndex = 0;
+
+function changeBackgroundImage() {
+  heroSection.style.backgroundImage = images[currentIndex];
+  currentIndex = (currentIndex + 1) % images.length;
+}
+
+setInterval(changeBackgroundImage, 5000); // Change background image every 5 seconds
+// const heroImage = document.querySelector('.body-text');
+
+// const images = [
+//   'https://source.unsplash.com/1600x900/?speaker,dark',
+//   'https://source.unsplash.com/1600x900/?earphones,dark',
+//   'https://source.unsplash.com/1600x900/?headset,dark'
+// ];
+// let currentIndex = 0;
+// let fadeInterval;
+
+// function fadeOutImage() {
+//   heroImage.style.opacity = 1;
+//   const fadeEffect = setInterval(() => {
+//     heroImage.style.opacity -= 0.1;
+//     if (heroImage.style.opacity <= 0) {
+//       clearInterval(fadeEffect);
+//       changeBackgroundImage();
+//       fadeInImage();
+//     }
+//   }, 50);
+// }
+
+// function fadeInImage() {
+//   heroImage.style.opacity = 0;
+//   const fadeEffect = setInterval(() => {
+//     heroImage.style.opacity = parseFloat(heroImage.style.opacity) + 0.1;
+//     if (heroImage.style.opacity >= 1) {
+//       clearInterval(fadeEffect);
+//       fadeInterval = setTimeout(fadeOutImage, 1000);
+//     }
+//   }, 50);
+// }
+
+// function changeBackgroundImage() {
+//   heroImage.style.backgroundImage = `url('${images[currentIndex]}')`;
+//   currentIndex = (currentIndex + 1) % images.length;
+// }
+
+// changeBackgroundImage();
+// fadeInImage();
