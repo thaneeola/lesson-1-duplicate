@@ -30,7 +30,9 @@ img {
 
   width: 480px;
   justify-content: space-between;
+  z-index: 1000;
 }
+
 .container ul a {
   color: rgba(255, 255, 255, 1);
   font-size: 15px;
@@ -48,6 +50,7 @@ img {
   background-repeat: no-repeat;
   background-position: 90% 100%;
   display: flex;
+  
   height: 674px;
   justify-content: flex-start;
   align-items: center;
@@ -88,7 +91,7 @@ img {
 
   opacity: 0.75;
 }
-.oyin button {
+.buttons {
   padding-block: 15px;
   padding-inline: 31px;
   width: 160px;
@@ -97,12 +100,13 @@ img {
   border: none;
   transition: background-color 300ms ease-in-out;
 }
-.oyin button:hover {
+.buttons:hover {
   background-color: #fbaf85;
 }
 .body-button {
   background-color: white;
   display: flex;
+
   gap: 20px;
   padding-block: 100px;
   justify-content: center;
@@ -328,6 +332,9 @@ footer p {
   align-items: center;
   gap: 20px;
 }
+.blur.blurEffect {
+  filter: brightness(0.2);
+}
 /*res for tab*/
 @media (min-device-width: 792px) and (max-device-width: 1024px) {
   .container {
@@ -422,9 +429,9 @@ footer p {
     line-height: 25px;
     text-align: center;
     opacity: 0.75;
-    width: 200px;
+  
   }
-  .oyin button {
+  .buttons {
     padding-block: 15px;
     padding-inline: 31px;
     color: #f1f1f1;
@@ -512,6 +519,9 @@ footer p {
 
   .body-text {
     padding-left: 165px;
+  }
+  .buttons, .oyin h4{
+    margin-right: auto;
   }
 
   .text {
@@ -710,7 +720,7 @@ footer p {
     text-align: center;
     opacity: 0.75;
   }
-  .oyin button {
+  .buttons {
     padding-block: 15px;
     padding-inline: 31px;
     color: #f1f1f1;

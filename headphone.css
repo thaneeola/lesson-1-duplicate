@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero-text {
+  text-align: center;
+  padding-block: 2rem;
+  font-size: 30px;
+  background-color: black;
+  color: white;
+}
+img {
+  max-inline-size: 100%;
+}
+
+.headphone-sec h1 {
+  /* XX99 Mark II Headpho */
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+}
+.text-head {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+
+  opacity: 0.5;
+}
+.headphone-section {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: repeat(4, 100px);
+  /* padding-inline: 165px; */
+}
+.headphone-section img {
+  grid-row: 1/4;
+  grid-column: 2/7;
+  /* margin-left: 120px; */
+  width: 380px;
+  height: 400px;
+}
+.headphone-sec {
+  grid-row: 1/4;
+  grid-column: 7/10;
+  width: 445px;
+  display: flex;
+  margin-left: 0px;
+  flex-direction: column;
+  gap: 16px;
+  border: 2px solid;
+  margin-block: auto;
+}
+.headphone-sec #new-product {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+
+  color: #d87d4a;
+}
+/*res for tab*/
+@media (min-device-width: 792px) and (max-device-width: 1024px) {
+  .hero-text {
+    padding-block: 4rem;
+  }
+  .speaker-section {
+    flex-direction: row;
+    margin: auto;
+    gap: 70px;
+    width: 600px;
+    padding-block: 20px;
+    text-align: center;
+  }
+  .headphone-section {
+    padding: 24px;
+    gap: 24px;
+  }
+  .headphone-section img {
+    grid-row: 1/4;
+    grid-column: 2/7;
+  }
+  .headphone-sec {
+    grid-row: 1/4;
+    grid-column: 7/10;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 0px;
+    border: 2px solid;
+    margin-block: auto;
+  }
+}
+
+/*res for laptops*/
+@media (min-width: 1024px) {
+  .hero-text {
+    padding-block: 4rem;
+    font-size: 40px;
+  }
+  .speaker-section {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 70px;
+    width: 600px;
+    padding-block: 20px;
+    text-align: center;
+  }
+  .headphone-section {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: repeat(4, 100px);
+    padding-inline: 165px;
+    align-items: center;
+    padding-inline: 24px;
+    margin-top: 100px;
+  }
+  .headphone-section img {
+    grid-row: 2/4;
+    grid-column: 2/7;
+    margin-left: 120px;
+    width: 380px;
+    height: 400px;
+  }
+  .headphone-sec {
+    grid-row: 3/4;
+    grid-column: 7/10;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 2px solid;
+    margin-top: -150px;
+  }
+  .headphone-sec #new-product {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+    color: #d87d4a;
+  }
+}

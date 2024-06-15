@@ -1,32 +1,39 @@
 //  alert("hello Our site is having issues with javascript");
 let dive = document.getElementById("toggle");
 let link = document.getElementById("link");
-console.log(dive, link);
+let blurEffect = document.querySelector(".blurEffect");
 dive.addEventListener("click", show);
 function show() {
   if (link.style.display == "flex") {
     link.style.display = "none";
+    blurEffect.classList.remove("blur");
+    console.log(blurEffect);
   } else {
     link.style.display = "flex";
+    blurEffect.classList.add("blur");
   }
 }
-// import image1 from './img/Bitmap (1).png';
-// import image2 from './img/speaker.png'
-// import image3 from './img/profile.png'
+
 const heroSection = document.querySelector(".body-text");
 const images = [
   "url('./img/EAR3.png')",
   "url('./img/image (1).png')",
-  "url('./img/EAR.png')"
+  "url('./img/EAR.png')",
 ];
 let currentIndex = 0;
 
 function changeBackgroundImage() {
   heroSection.style.backgroundImage = images[currentIndex];
   currentIndex = (currentIndex + 1) % images.length;
+  // console.log(currentIndex);
 }
+setInterval(changeBackgroundImage, 5000);
 
-setInterval(changeBackgroundImage, 5000); // Change background image every 5 seconds
+// import image1 from './img/Bitmap (1).png';
+// import image2 from './img/speaker.png'
+// import image3 from './img/profile.png'
+
+// Change background image every 5 seconds
 // const heroImage = document.querySelector('.body-text');
 
 // const images = [
