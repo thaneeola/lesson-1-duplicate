@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+main {
+  padding-inline: 32px;
+  margin-top: 79px;
+}
+.back {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: black;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.price {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1.28571px;
+}
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 21px;
+  background-color: #f1f1f1;
+  padding: 16px 30px;
+}
+.cart-add {
+  display: flex;
+  gap: 10px;
+}
+
+.add span {
+  opacity: 25%;
+}
+.add span:hover {
+  color: #d87d4a;
+}
+.sec-features{
+    padding-inline: 50px;
+  
+}
+.sec-features p{
+    margin-top: 30px;
+}
+.Features{
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 88px;
+    letter-spacing: 0.857143px;
+
+    
+    color: #000000;
+    
+    
+}
+pre{
+    margin-top: 8px;
+}
+pre span{
+    color: #D87D4A;
+    
+}
+/*res for tab*/
+@media (min-device-width: 792px) and (max-device-width: 1024px) {
+  main {
+    padding-inline: 32px;
+    margin-top: 79px;
+  }
+}
+
+/*res for laptops*/
+@media (min-width: 1024px) {
+  main {
+    padding-inline: 165px;
+    margin-top: 79px;
+  }
+}
