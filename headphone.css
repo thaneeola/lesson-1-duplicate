@@ -35,22 +35,22 @@ img {
   opacity: 0.5;
 }
 .headphone-section {
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: repeat(4, 100px);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+
   /* padding-inline: 165px; */
 }
 .headphone-section img {
-  grid-row: 1/4;
-  grid-column: 2/7;
-  /* margin-left: 120px; */
-  width: 380px;
-  height: 400px;
+
+
+  width: 300px;
+  height: 320px;
 }
 .headphone-sec {
-  grid-row: 1/4;
-  grid-column: 7/10;
-  width: 445px;
+  width: 300px;
   display: flex;
   margin-left: 0px;
   flex-direction: column;
@@ -83,6 +83,9 @@ img {
     text-align: center;
   }
   .headphone-section {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: repeat(4, 100px);
     padding: 24px;
     gap: 24px;
   }
