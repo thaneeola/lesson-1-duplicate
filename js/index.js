@@ -29,48 +29,27 @@ function changeBackgroundImage() {
 }
 setInterval(changeBackgroundImage, 5000);
 
-// import image1 from './img/Bitmap (1).png';
-// import image2 from './img/speaker.png'
-// import image3 from './img/profile.png'
+const add = document.querySelector(".plus")
+const minus = document.querySelector(".minu")
+const count = document.querySelector(".count")
+const num = [1, 2, 3, 4, 5, 6]
+let counter = 1
+count.innerHTML = num[0]
 
-// Change background image every 5 seconds
-// const heroImage = document.querySelector('.body-text');
+function add_minus() {
+    if (counter < num.length) {
+        count.innerHTML = num[counter]
+        counter++
+    }
+}
 
-// const images = [
-//   'https://source.unsplash.com/1600x900/?speaker,dark',
-//   'https://source.unsplash.com/1600x900/?earphones,dark',
-//   'https://source.unsplash.com/1600x900/?headset,dark'
-// ];
-// let currentIndex = 0;
-// let fadeInterval;
+function minus_minus() {
+    if (counter > 0) {
+        counter--
+        count.innerHTML = num[counter]
+    }
+}
 
-// function fadeOutImage() {
-//   heroImage.style.opacity = 1;
-//   const fadeEffect = setInterval(() => {
-//     heroImage.style.opacity -= 0.1;
-//     if (heroImage.style.opacity <= 0) {
-//       clearInterval(fadeEffect);
-//       changeBackgroundImage();
-//       fadeInImage();
-//     }
-//   }, 50);
-// }
+add.addEventListener("click", add_minus)
+minus.addEventListener("click", minus_minus)
 
-// function fadeInImage() {
-//   heroImage.style.opacity = 0;
-//   const fadeEffect = setInterval(() => {
-//     heroImage.style.opacity = parseFloat(heroImage.style.opacity) + 0.1;
-//     if (heroImage.style.opacity >= 1) {
-//       clearInterval(fadeEffect);
-//       fadeInterval = setTimeout(fadeOutImage, 1000);
-//     }
-//   }, 50);
-// }
-
-// function changeBackgroundImage() {
-//   heroImage.style.backgroundImage = `url('${images[currentIndex]}')`;
-//   currentIndex = (currentIndex + 1) % images.length;
-// }
-
-// changeBackgroundImage();
-// fadeInImage();
