@@ -5,12 +5,13 @@
     <script src="https://kit.fontawesome.com/d90c38ca7c.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    
     <title>Lesson 2</title>
   </head>
   <body>
     <header>
       <div class="container">
-        
+       
         <picture class="toggle" id="toggle"> <img src="./img/Group.png" alt="toggle"></picture>
         <picture class="site-logo"><img src="./img/audiophile 2.png" alt="site-logo" /></picture>
         <ul id="link">
@@ -52,9 +53,36 @@
 
         </ul>
           <picture class="cart">
-          <img src="./img/cart.png" alt="cart-icon" 
-          /></picture>
-               
+          <img src="./img/cart.png" alt="cart-icon" id="cart-icon" 
+          />
+        </picture>
+        <div class="cart__show" id="cart__show">
+          <div class="cart-header">
+              <h2>CART (3)</h2>
+              <a href="#">Remove all</a>
+          </div>
+          <div class="cart-item">
+              <div class="item-image"></div>
+              <div class="item-details">
+                  <h3>X99 MK II</h3>
+                  <p>$2,999</p>
+              </div>
+              <section class="add">
+                <span class="minu">-</span>
+                <p class="count"></p>
+                <span class="plus">+</span>
+            
+            </section>
+          </div>
+       
+          <div class="cart-header cart-pad">
+            <a class="total">TOTAL</a>
+            <h2>$2,999</h2>
+            
+        </div>
+          <button class="checkout-btn">CHECKOUT</button>
+      </div>
+    
       </div>
     </header>
     <div class="blurEffect">
@@ -97,6 +125,7 @@
        </div>
        </section>
   </section>
+ 
   <section class="tr">
     <div class="speaker-section">
       <img src="./img/speaker.png" alt="speaker" class="speak">
