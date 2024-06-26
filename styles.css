@@ -74,13 +74,9 @@ img {
   color: #d87d4a;
 }
 
-.container .shop:hover samp {
-  transform: translateX(90deg);
-}
 
-.new-tabs {
 
-}
+
 
 .cart__show {
   background-color: white;
@@ -230,6 +226,7 @@ img {
   padding-inline: 24px;
 }
 
+
 .speaker-section {
   display: flex;
   flex-direction: column;
@@ -268,9 +265,14 @@ img {
 .text a samp {
   color: #fbaf85;
 }
+
+
 .new-tabs:hover a {
   color: #fbaf85;
+
 }
+
+
 .speaker p {
   font-size: 15px;
   line-height: 25px;
@@ -492,9 +494,9 @@ footer p {
   .site-logo {
     margin: auto;
   }
-  /* .container ul a {
+  .container ul  .first__link{
     display: none;
-  } */
+  }
 
   .text {
     background-color: #f1f1f1;
@@ -777,7 +779,12 @@ footer p {
 
   .container {
     padding-inline: 37px;
+    position: absolute;
   }
+  .container ul  .first__link{
+    display: none;
+  }
+
   .container ul {
     display: none;
 
