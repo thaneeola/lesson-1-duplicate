@@ -11,6 +11,12 @@ html{
 }
 body{
   cursor: default;
+  background-color: #F2F2F2;
+  
+ 
+}
+header {
+  position: relative;
 }
 
 .container {
@@ -23,6 +29,8 @@ body{
   left: 0;
   right: 0;
  z-index: 3;
+
+
 }
 img {
   max-inline-size: 100%;
@@ -32,13 +40,16 @@ img {
   margin-left: auto;
 }
 
+.home__link{
+  display: none;
+}
+
 .container ul {
   margin-left: 20%;
   display: flex;
   position: absolute;
   list-style: none;
   font-weight: 700;
-
   width: 480px;
   justify-content: space-between;
   z-index: 1000;
@@ -52,8 +63,23 @@ img {
   transition: color 200ms ease-in-out;
 }
 
-.container ul a:hover{
+.container ul a:hover,.shop:hover{
   color: #d87d4a;
+}
+
+.shop{
+  color: black;
+}
+.shop samp{
+  color: #d87d4a;
+}
+
+.container .shop:hover samp {
+  transform: translateX(90deg);
+}
+
+.new-tabs {
+
 }
 
 .cart__show {
@@ -448,7 +474,7 @@ footer p {
     gap: 6px;
     align-items: center;
     margin-left: -40px;
-    justify-content: none;
+    justify-content: center;
     top: 95px;
     width: 100%;
     height: 340px;
@@ -466,9 +492,9 @@ footer p {
   .site-logo {
     margin: auto;
   }
-  .container ul a {
+  /* .container ul a {
     display: none;
-  }
+  } */
 
   .text {
     background-color: #f1f1f1;
@@ -629,6 +655,9 @@ footer p {
   .new-tab {
     display: none;
   }
+  .home__link{
+    display: flex;
+  }
   .new-tabs p {
     margin-top: 20px;
     font-size: 15px;
@@ -769,9 +798,7 @@ footer p {
   .site-logo {
     margin: auto;
   }
-  .container ul a {
-    display: none;
-  }
+ 
   .text {
     background-color: #f1f1f1;
     width: 250px;

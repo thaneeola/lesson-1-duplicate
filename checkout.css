@@ -1,0 +1,251 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap'); */
+@font-face {
+  font-family: "karla";
+  src: url("./assets/fonts/Karla-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Green-200-lighter: hsl(148, 38%, 91%);
+  --Green-600-medium: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-500-medium: hsl(186, 15%, 59%);
+  --Grey-900-darker: hsl(187, 24%, 22%);
+  --Font-size-labels: 16px;
+}
+body {
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+.go__back {
+  font-size: 15px;
+  line-height: 25px;
+  color: black;
+  opacity: 0.5;
+  text-decoration: none;
+  margin-top: 165px;
+  margin-inline-start: 25px;
+  margin-bottom: 38px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 25px;
+}
+main {
+  background-color: #ffff;
+  /* width:  730px; */
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.14286px;
+  color: #000000;
+}
+.p__text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  /* identical to box height, or 192% */
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  margin-top: 41px;
+  margin-bottom: 16px;
+  color: #d87d4a;
+}
+fieldset {
+  border: none;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input{
+  z-index: 0.5;
+}
+input:not([type="radio"]):not([type="checkbox"]) {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+label {
+  width: 100%;
+}
+
+label p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  color: #000000;
+}
+
+.payment__method p {
+  width: 50%;
+}
+
+.input__text,
+.radio1,
+.radio2 {
+  width: 100%;
+  height: 20px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  padding: 20px;
+}
+
+.input__text:hover {
+  border-color: #d87d4a;
+  cursor: pointer;
+}
+
+.required-text,
+.required-text1,
+.required-text2,
+.required-text3,
+.required-text4,
+.required-text5 {
+  color: var(--Red);
+  display: none;
+}
+.radio1,
+.radio2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.radio1:active,
+.radio2:active,
+.radio1:hover,
+.radio2:hover,
+#textarea:focus,
+.input__text:focus {
+  border-color: #d87d4a;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  accent-color: #d87d4a;
+}
+
+.check {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.last_fieldset {
+  margin-top: 24px;
+  display: flex;
+}
+.payment {
+  display: none;
+  gap: 32px;
+  margin-block: 30px;
+}
+
+.payment p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+.summary {
+  /* width: 300px; */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.summary-item {
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.cart-header .last__h2 {
+  color: #d87d4a;
+}
+footer{
+  margin-top: 100px;
+}
+@media (width>=768px) {
+  fieldset {
+    gap: 10px;
+    flex-direction: row;
+  }
+  .text {
+    input:not([type="radio"]):not([type="checkbox"]) {
+      width: 100%;
+    }
+  }
+}
+
+/*res for tab*/
+@media (min-device-width: 792px) and (max-device-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+    padding-inline: 34px;
+    margin-inline-start: 32px;
+  }
+  .go__back {
+    margin-inline-start: 32px;
+  }
+  main {
+    width: 730px;
+  }
+
+  .summary {
+    width: 300px;
+  }
+
+  .payment__method {
+    display: flex;
+  }
+  .payment__method div {
+    width: 50%;
+  }
+}
+
+/*res for laptops*/
+@media (min-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+    padding-inline: 165px;
+  }
+  .go__back {
+    margin-inline-start: 165px;
+  }
+  .summary {
+    width: 300px;
+  }
+
+  main {
+    width: 730px;
+  }
+
+  .payment__method {
+    display: flex;
+  }
+  .payment__method div {
+    width: 50%;
+  }
+}

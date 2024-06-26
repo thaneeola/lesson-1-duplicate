@@ -64,3 +64,17 @@ function minus_minus() {
 add.addEventListener("click", add_minus)
 minus.addEventListener("click", minus_minus)
 
+let cartItems = [
+  {
+    productName: "speaker",
+    productImage: "image"
+  },
+  {
+    productName: "headset",
+    productImage: "image"
+  }
+]
+
+console.log(cartItems[0].productName);
+
+// const singleitem = cartItems.find(item => item.productName == "speaker" )

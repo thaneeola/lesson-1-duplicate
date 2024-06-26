@@ -10,6 +10,7 @@ main {
   color: black;
   opacity: 0.5;
   text-decoration: none;
+  margin-top: 164px;
 }
 .price {
   font-weight: 700;
