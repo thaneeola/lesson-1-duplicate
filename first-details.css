@@ -2,15 +2,18 @@
 
 main {
   padding-inline: 32px;
-  margin-top: 79px;
+  /* margin-top: 79px; */
 }
 .back {
+  padding-top: 164px;
+  padding-inline: 32px;
+}
+.back a {
+  color: black;
   font-size: 15px;
   line-height: 25px;
-  color: black;
   opacity: 0.5;
   text-decoration: none;
-  margin-top: 164px;
 }
 .price {
   font-weight: 700;
@@ -22,7 +25,6 @@ main {
   display: flex;
   gap: 10px;
 }
-
 
 .sec-features {
   display: flex;

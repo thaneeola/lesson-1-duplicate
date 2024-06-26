@@ -40,26 +40,29 @@ function changeBackgroundImage() {
 }
 setInterval(changeBackgroundImage, 5000);
 
-const add = document.querySelector(".plus")
-const minus = document.querySelector(".minu")
-const count = document.querySelector(".count")
-const num = [1, 2, 3, 4, 5, 6]
-let counter = 1
-count.innerHTML = num[0]
+const addButtons = document.querySelectorAll(".plus");
+const minusButtons = document.querySelectorAll(".minu");
+const counts = document.querySelectorAll(".count");
+const num = [1, 2, 3, 4, 5, 6];
 
-function add_minus() {
-    if (counter < num.length) {
-        count.innerHTML = num[counter]
-        counter++
-    }
-}
+counts.forEach((count, index) => {
+    let counter = 0;
+    count.innerHTML = num[counter];
 
-function minus_minus() {
-    if (counter > 0) {
-        counter--
-        count.innerHTML = num[counter]
-    }
-}
+    addButtons[index].addEventListener("click", function() {
+        if (counter < num.length - 1) {
+            counter++;
+            count.innerHTML = num[counter];
+        }
+    });
+
+    minusButtons[index].addEventListener("click", function() {
+        if (counter > 0) {
+            counter--;
+            count.innerHTML = num[counter];
+        }
+    });
+});
 
 add.addEventListener("click", add_minus)
 minus.addEventListener("click", minus_minus)

@@ -11,7 +11,7 @@ html{
 }
 body{
   cursor: default;
-  background-color: #F2F2F2;
+  /* background-color: #F2F2F2; */
   
  
 }
@@ -160,7 +160,7 @@ img {
   background-repeat: no-repeat;
   background-position: 90% 100%;
   display: flex;
-
+  padding-top: 90px;
   height: 674px;
   justify-content: flex-start;
   align-items: center;

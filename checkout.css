@@ -21,16 +21,27 @@ body {
   background-color: #f2f2f2;
   min-height: 100vh;
 }
-.go__back {
-  font-size: 15px;
-  line-height: 25px;
-  color: black;
-  opacity: 0.5;
-  text-decoration: none;
-  margin-top: 165px;
-  margin-inline-start: 25px;
-  margin-bottom: 38px;
-}
+
+ 
+  .back  {
+  
+    padding-top: 164px;
+    padding-inline: 32px;
+    margin-bottom: 32px;
+  }
+  .back a{
+    font-size: 15px;
+    line-height: 25px;
+    color: black;
+    opacity: 0.5;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .back a:hover{
+    color: #d87d4a;
+  }
+
 .wrapper {
   display: flex;
   flex-direction: column;
