@@ -6,7 +6,7 @@
     <title>checkout</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="/checkout.css" />
-    
+
     <script
       src="https://kit.fontawesome.com/d90c38ca7c.js"
       crossorigin="anonymous"
@@ -98,161 +98,229 @@
             <a class="total">TOTAL</a>
             <h2>$2,999</h2>
           </div>
-          <a href="/chechout.html"><button class="checkout-btn">CHECKOUT</button></a>
+          <a href="/chechout.html"
+            ><button class="checkout-btn">CHECKOUT</button></a
+          >
         </div>
       </div>
     </header>
-
-    <section class="back">
-      <a href="headphone.html" >Go Back</a>
-    </section>
-    <section class="wrapper">
-      <main>
-        <h1>CHECKOUT</h1>
-        <p class="p__text">Billing Details</p>
-        <form id="myform">
-          <fieldset>
-            <label for="name">
-              <p>Name</p>
-              <input
-                type="text"
-                id="name input__text"
-                class="input__text"
-                placeholder="thanee_ola"
-              />
-              <p class="required-text">Please fill out this field</p>
-            </label>
-
-            <label for="email">
-              <p>Email Address</p>
-              <input
-                type="email"
-                id="email input__text"
-                class="input__text"
-                placeholder="thanee_ola@gmail.com"
-              />
-              <p class="required-text1">Please fill out this field</p>
-            </label>
-          </fieldset>
-          <fieldset>
-            <label for="phone_num">
-              <p>Phone</p>
-              <input
-                type="email"
-                id="phone_num input__text"
-                class="input__text"
-                placeholder="+23484222459"
-              />
-              <p class="required-text2">Please enter a valid email address</p>
-            </label>
-            <label></label>
-          </fieldset>
-
+    <div class="blurEffect">
+      <section class="back">
+        <a href="headphone.html">Go Back</a>
+      </section>
+      <section class="wrapper">
+        <main>
+          <h1>CHECKOUT</h1>
           <p class="p__text">Billing Details</p>
-          <label for="Address">
-            <p>Address</p>
-            <input
-              type="email"
-              id="Address input__text"
-              class="input__text"
-              placeholder="1137 Williams Avenue"
-            />
-            <p class="required-text2">Please enter a valid email address</p>
-          </label>
+          <form id="myform">
+            <fieldset>
+              <label for="name">
+                <p>Name</p>
+                <input
+                  type="text"
+                  id="name input__text"
+                  class="input__text"
+                  placeholder="thanee_ola"
+                />
+              </label>
 
-          <fieldset>
-            <label for="zip">
-              <p>ZIP Code</p>
-              <input
-                type="text"
-                id="zip input__text"
-                class="input__text"
-                placeholder="10001"
-              />
-              <p class="required-text">Please fill out this field</p>
-            </label>
+              <label for="email">
+                <p>Email Address</p>
+                <input
+                  type="email"
+                  id="email input__text"
+                  class="input__text"
+                  placeholder="thanee_ola@gmail.com"
+                />
+              </label>
+            </fieldset>
+            <fieldset>
+              <label for="phone_num">
+                <p>Phone</p>
+                <input
+                  type="email"
+                  id="phone_num input__text"
+                  class="input__text"
+                  placeholder="+23484222459"
+                />
+              </label>
+              <label></label>
+            </fieldset>
 
-            <label for="City">
-              <p>City</p>
+            <p class="p__text">Billing Details</p>
+            <label for="Address">
+              <p>Address</p>
               <input
                 type="email"
-                id="City input__text"
-                class="input__text "
-                placeholder="New York"
-              />
-              <p class="required-text1">Please fill out this field</p>
-            </label>
-          </fieldset>
-
-          <fieldset>
-            <label for="Country">
-              <p>Country</p>
-              <input
-                type="email"
-                id="Country input__text"
+                id="Address input__text"
                 class="input__text"
-                placeholder="Nigeria"
+                placeholder="1137 Williams Avenue"
               />
-              <p class="required-text2">Please enter a valid email address</p>
             </label>
-            <label></label>
-          </fieldset>
 
-          <p class="p__text">Billing Details</p>
+            <fieldset>
+              <label for="zip">
+                <p>ZIP Code</p>
+                <input
+                  type="text"
+                  id="zip input__text"
+                  class="input__text"
+                  placeholder="10001"
+                />
+              </label>
 
-          <div class="payment__method">
-            <p>Payment method</p>
-            <div>
-              <label for="radio1 radio" class="radio1">
-                <input type="radio" id="radio1 radio" name="radio" checked />
-                <p>e-Money</p>
+              <label for="City">
+                <p>City</p>
+                <input
+                  type="email"
+                  id="City input__text"
+                  class="input__text"
+                  placeholder="New York"
+                />
               </label>
-              <label for="radio2 radio" class="radio2">
-                <input type="radio" id="radio2 radio" name="radio" />
-                <p>Cash on Delivery</p>
+            </fieldset>
+
+            <fieldset>
+              <label for="Country">
+                <p>Country</p>
+                <input
+                  type="email"
+                  id="Country input__text"
+                  class="input__text"
+                  placeholder="Nigeria"
+                />
               </label>
+              <label></label>
+            </fieldset>
+
+            <p class="p__text">Billing Details</p>
+
+            <div class="payment__method">
+              <p>Payment method</p>
+              <div>
+                <label for="radio1 radio" class="radio1">
+                  <input type="radio" id="radio1 radio" name="radio" checked />
+                  <p>e-Money</p>
+                </label>
+                <label for="radio2 radio" class="radio2">
+                  <input type="radio" id="radio2 radio" name="radio" />
+                  <p>Cash on Delivery</p>
+                </label>
+              </div>
             </div>
+
+            <fieldset class="last_fieldset">
+              <label for="e-Money">
+                <p>e-Money Number</p>
+                <input
+                  type="text"
+                  id="e-Money input__text "
+                  class="input__text"
+                  placeholder="238521993"
+                />
+              </label>
+
+              <label for="e-Money__PIN">
+                <p>e-Money PIN</p>
+                <input
+                  type="email"
+                  id="e-Money__PIN input__text"
+                  class="input__text"
+                  placeholder="6891"
+                />
+              </label>
+            </fieldset>
+
+            <div class="payment">
+              <img src="/img/Shape.png" alt="payment" />
+              <p>
+                The ‘Cash on Delivery’ option enables you to pay in cash when
+                our delivery courier arrives at your residence. Just make sure
+                your address is correct so that your order will not be
+                cancelled.
+              </p>
+            </div>
+          </form>
+        </main>
+
+        <section id="myform">
+          <div class="summary">
+            <h2>SUMMARY</h2>
+
+            <div class="summary-item">
+              <div class="item-image">
+                <img src="/img/headset-2.png" alt="" />
+              </div>
+              <div class="item-details">
+                <h3>X99 MK II</h3>
+                <p>$2,999</p>
+              </div>
+              <p>1x</p>
+            </div>
+
+            <div class="cart-header cart-pad">
+              <a class="total">TOTAL</a>
+              <h2>$2,999</h2>
+            </div>
+            <div class="cart-header cart-pad">
+              <a class="total">SHIPPING</a>
+              <h2>$50</h2>
+            </div>
+            <div class="cart-header cart-pad">
+              <a class="total">VAT (INCLUDED)</a>
+              <h2>$1,O79</h2>
+            </div>
+            <div class="cart-header cart-pad">
+              <a class="total">GRAND TOTAL</a>
+              <h2 class="last__h2">$5,446</h2>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">CONTINUE</button>
           </div>
+        </section>
+      </section>
 
-          <fieldset class="last_fieldset">
-            <label for="e-Money">
-              <p>e-Money Number</p>
-              <input
-                type="text"
-                id="e-Money input__text "
-                class="input__text"
-                placeholder="238521993"
-              />
-              <p class="required-text">Please fill out this field</p>
-            </label>
+    
 
-            <label for="e-Money__PIN">
-              <p>e-Money PIN</p>
-              <input
-                type="email"
-                id="e-Money__PIN input__text"
-                class="input__text"
-                placeholder="6891"
-              />
-              <p class="required-text1">Please fill out this field</p>
-            </label>
-          </fieldset>
-
-          <div class="payment">
-            <img src="/img/Shape.png" alt="payment" />
-            <p>
-              The ‘Cash on Delivery’ option enables you to pay in cash when our
-              delivery courier arrives at your residence. Just make sure your
-              address is correct so that your order will not be cancelled.
-            </p>
+      <footer>
+        <section class="logo">
+          <picture
+            ><img src="./img/audiophile 2.png" alt="site-logo"
+          /></picture>
+          <div class="footer-link">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="headphone.html">HEADPHONES</a></li>
+              <li><a href="speaker.html">SPEAKERS</a></li>
+              <li><a href="#">EARPHONES</a></li>
+            </ul>
           </div>
-        </form>
-      </main>
+        </section>
 
-      <section id="myform">
-        <div class="summary">
-          <h2>SUMMARY</h2>
+        <p class="oyin-p">
+          Audiophile is an all in one stop to fulfill your audio needs . We're a
+          small team of music lovers and sound specialists who are devoted to
+          helping you get the most out of personal audio. Come and visit our
+          demo facility - we’re open 7 days a week.
+        </p>
+        <div class="footer-icon">
+          <p>Copyright 2021. All Rights Reserved</p>
+          <section class="icons">
+            <a href="https://dribbble.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <section class="ordered__section" id="ordered__section">
+      <picture><img src="/img/checkmark.png" alt="checkmark" /></picture>
+      <h1 class="ordered__header">THANK YOU FOR YOUR ORDER</h1>
+      <p>You will receive an email confirmation shortly.</p>
 
+      <div class="ordered__list">
+        <div class="what__ordered">
           <div class="summary-item">
             <div class="item-image">
               <img src="/img/headset-2.png" alt="" />
@@ -263,57 +331,15 @@
             </div>
             <p>1x</p>
           </div>
-
-          <div class="cart-header cart-pad">
-            <a class="total">TOTAL</a>
-            <h2>$2,999</h2>
-          </div>
-          <div class="cart-header cart-pad">
-            <a class="total">SHIPPING</a>
-            <h2>$50</h2>
-          </div>
-          <div class="cart-header cart-pad">
-            <a class="total">VAT (INCLUDED)</a>
-            <h2>$1,O79</h2>
-          </div>
-          <div class="cart-header cart-pad">
-            <a class="total">GRAND TOTAL</a>
-            <h2 class="last__h2">$5,446</h2>
-          </div>
-          <button class="checkout-btn" id="checkout-btn">CONTINUE</button>
         </div>
-      </section>
-    </section>
-    <footer>
-      <section class="logo">
-        <picture><img src="./img/audiophile 2.png" alt="site-logo" /></picture>
-        <div class="footer-link">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="headphone.html">HEADPHONES</a></li>
-            <li><a href="speaker.html">SPEAKERS</a></li>
-            <li><a href="#">EARPHONES</a></li>
-          </ul>
-        </div>
-      </section>
 
-      <p class="oyin-p">
-        Audiophile is an all in one stop to fulfill your audio needs . We're a
-        small team of music lovers and sound specialists who are devoted to
-        helping you get the most out of personal audio. Come and visit our demo
-        facility - we’re open 7 days a week.
-      </p>
-      <div class="footer-icon">
-        <p>Copyright 2021. All Rights Reserved</p>
-        <section class="icons">
-          <a href="https://dribbble.com/"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-        </section>
+        <div class="ordered__grand-total">
+          <h3>GRAND TOTAL</h3>
+          <h2>$ 5,446</h2>
+        </div>
       </div>
-    </footer>
+     <a href="/index.html">  <button class="checkout-btn">BACK TO HOME</button></a>
+    </section>
     <script src="/js/checkout.js"></script>
     <script src="/js/index.js"></script>
   </body>

@@ -14,6 +14,7 @@ function show() {
   } else {
     link.style.display = "flex";
     blurEffect.classList.add("blur");
+    
   }
 }
 
@@ -67,17 +68,17 @@ counts.forEach((count, index) => {
 add.addEventListener("click", add_minus)
 minus.addEventListener("click", minus_minus)
 
-let cartItems = [
-  {
-    productName: "speaker",
-    productImage: "image"
-  },
-  {
-    productName: "headset",
-    productImage: "image"
-  }
-]
+// let cartItems = [
+//   {
+//     productName: "speaker",
+//     productImage: "image"
+//   },
+//   {
+//     productName: "headset",
+//     productImage: "image"
+//   }
+// ]
 
-console.log(cartItems[0].productName);
+// console.log(cartItems[0].productName);
 
 // const singleitem = cartItems.find(item => item.productName == "speaker" )

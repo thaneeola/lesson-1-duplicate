@@ -15,6 +15,7 @@ body{
   
  
 }
+
 header {
   position: relative;
 }
@@ -464,6 +465,9 @@ footer p {
 }
 .blur.blurEffect {
   filter: brightness(0.2);
+  background-color: black;
+  
+  
 }
 /*res for tab*/
 @media (min-device-width: 792px) and (max-device-width: 1024px) {

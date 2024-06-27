@@ -3,13 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+.hero{
+  padding-top: 84px;
+}
 .hero-text {
   text-align: center;
   padding-block: 2rem;
   font-size: 30px;
   background-color: black;
   color: white;
-  margin-top: 84px;
+  
 }
 img {
   max-inline-size: 100%;
@@ -101,7 +104,7 @@ img {
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: repeat(3, 100px);
-    margin-top: 50px;
+    margin-top: 130px;
     gap: 0 60px;
   }
   .headphone-section img {
@@ -115,6 +118,7 @@ img {
     justify-content: start;
     align-items: start;
     margin-top: 100px;
+  
     
   }
   .headphone-section2 {
@@ -122,6 +126,7 @@ img {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: repeat(3, 100px);
     gap: 0 60px;
+    margin-top: 130px;
   }
   .headphone-section2 img {
     grid-row: 2/3;
