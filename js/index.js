@@ -82,3 +82,6 @@ minus.addEventListener("click", minus_minus)
 // console.log(cartItems[0].productName);
 
 // const singleitem = cartItems.find(item => item.productName == "speaker" )
+
+
+ScrollReveal().reveal('.headline');
