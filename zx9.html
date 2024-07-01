@@ -112,13 +112,13 @@
         <img src="./img/speaker-1.png" alt="speaker" class="speak" />
         <div class="headphone-sec">
           <p id="new-product">NEW PRODUCT</p>
-          <h1>ZX9 SPEAKER</h1>
+          <h1 id="itemName">ZX9 SPEAKER</h1>
           <p class="text-head">
             Stream high quality sound wirelessly with minimal to no loss. The
             ZX9 speaker uses high-end audiophile components that represents the
             top of the line powered speakers for home or studio use.
           </p>
-          <p class="price">$4,750</p>
+          <p class="price" id="Price">$4,750</p>
 
           <div class="cart-add">
             <section class="add">
@@ -126,7 +126,11 @@
               <p class="count"></p>
               <span class="plus">+</span>
             </section>
-            <button class="buttons">ADD TO CART</button>
+            <button class="buttons" 
+            data-id="zx9" 
+            data-name="ZX9" 
+            data-price="4,750" 
+            data-image="./img/speaker-1.png"> >ADD TO CART</button>
           </div>
         </div>
       </div>
@@ -286,6 +290,7 @@
     </footer>
 
     <!-- </div> -->
+    <script src="./js/cart.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

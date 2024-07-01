@@ -110,14 +110,14 @@
         <img src="./img/earphones-1.png" alt="speaker" class="speak" />
         <div class="headphone-sec">
           <p id="new-product">NEW PRODUCT</p>
-          <h1>YX1 WIRELESS EARPHONES</h1>
+          <h1 id="itemName">YX1 WIRELESS EARPHONES</h1>
           <p class="text-head">
             Tailor your listening experience with bespoke dynamic drivers from
             the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound
             even in noisy environments with its active noise cancellation
             feature.
           </p>
-          <p class="price">$750</p>
+          <p class="price" id="Price">$750</p>
 
           <div class="cart-add">
             <section class="add">
@@ -125,7 +125,11 @@
               <p class="count"></p>
               <span class="plus">+</span>
             </section>
-            <a href="#"><button class="buttons">ADD TO CART</button></a>
+            <a href="#"><button class="buttons" 
+              data-id="yx1" 
+              data-name="yx1" 
+              data-price="750" 
+              data-image="./img/earphones-1.png">ADD TO CART</button></a>
           </div>
         </div>
       </div>
@@ -285,6 +289,7 @@
     </footer>
 
     <!-- </div> -->
+    <script src="./js/cart.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

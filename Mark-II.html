@@ -84,7 +84,7 @@
               <img src="./img/headset-3.png" alt="" />
             </div>
             <div class="item-details">
-              <h3>X99 MK II</h3>
+              <h3>X99 MK I</h3>
               <p>$2,999</p>
             </div>
             <section class="add">
@@ -112,21 +112,25 @@
         <img src="./img/speaker 1.png" alt="speaker" class="speak" />
         <div class="headphone-sec">
           <p id="new-product">NEW PRODUCT</p>
-          <h1>XX99 Mark II Headphones</h1>
+          <h1 id="itemName">XX99 Mark II Headphones</h1>
           <p class="text-head">
             The new XX99 Mark II headphones is the pinnacle of pristine audio.
             It redefines your premium headphone experience by reproducing the
             balanced depth and precision of studio-quality sound.
           </p>
-          <p class="price">$2,999</p>
+          <p class="price" id="Price">$2,999</p>
 
-          <div class="cart-add">
+          <div class="cart-add" id="cartItemCount">
             <section class="add">
               <span class="minu">-</span>
               <p class="count"></p>
               <span class="plus">+</span>
             </section>
-            <button class="buttons">ADD TO CART</button>
+            <button class="buttons" 
+            data-id="X99MK2" 
+            data-name="Mark II" 
+            data-price="2999" 
+            data-image="./img/speaker 1.png">ADD TO CART</button>
           </div>
         </div>
       </div>
@@ -286,6 +290,8 @@
     </footer>
 
     <!-- </div> -->
+
+     <script src="./js/cart.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
