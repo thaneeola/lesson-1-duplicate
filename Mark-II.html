@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product-1-details</title>
     <script
-    src="https://kit.fontawesome.com/d90c38ca7c.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/d90c38ca7c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -80,12 +80,14 @@
             <a href="#">Remove all</a>
           </div>
           <div class="cart-item">
-            <div class="item-image">
-              <img src="./img/headset-3.png" alt="" />
-            </div>
-            <div class="item-details">
-              <h3>X99 MK I</h3>
-              <p>$2,999</p>
+            <div class="product-wrapper">
+              <!-- <div class="item-image">
+                <img src=${matchedItem.image} alt="" />
+              </div>
+              <div class="item-details">
+                <h3>${matchedItem.name}</h3>
+                <p>${matchedItem.price}</p>
+              </div> -->
             </div>
             <section class="add">
               <span class="minu">-</span>
@@ -118,7 +120,7 @@
             It redefines your premium headphone experience by reproducing the
             balanced depth and precision of studio-quality sound.
           </p>
-          <p class="price" id="Price">$2,999</p>
+          <p class="price" id="Price">$<span id="Price">2999</span></p>
 
           <div class="cart-add" id="cartItemCount">
             <section class="add">
@@ -126,11 +128,15 @@
               <p class="count"></p>
               <span class="plus">+</span>
             </section>
-            <button class="buttons" 
-            data-id="X99MK2" 
-            data-name="Mark II" 
-            data-price="2999" 
-            data-image="./img/speaker 1.png">ADD TO CART</button>
+            <button
+              class="buttons"
+              data-id="X99MK2"
+              data-name="Mark II"
+              data-price="2999"
+              data-image="./img/speaker 1.png"
+            >
+              ADD TO CART
+            </button>
           </div>
         </div>
       </div>
@@ -291,7 +297,7 @@
 
     <!-- </div> -->
 
-     <script src="./js/cart.js"></script>
+    <script src="./js/cart.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
