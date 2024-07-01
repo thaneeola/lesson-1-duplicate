@@ -1,8 +1,8 @@
 //  alert("hello Our site is having issues with javascript");
 let dive = document.getElementById("toggle");
 let link = document.getElementById("link");
-let cart = document.getElementById("cart-icon")
-let cart__show = document.getElementById("cart__show")
+let cart = document.getElementById("cart-icon");
+let cart__show = document.getElementById("cart__show");
 let blurEffect = document.querySelector(".blurEffect");
 dive.addEventListener("click", show);
 
@@ -14,18 +14,17 @@ function show() {
   } else {
     link.style.display = "flex";
     blurEffect.classList.add("blur");
-    
   }
 }
 
-function carts(){
-  if(cart__show.style.display == "none"){
+function carts() {
+  if (cart__show.style.display == "none") {
     cart__show.style.display = "block";
   } else {
     cart__show.style.display = "none";
   }
 }
-cart.addEventListener("click", carts)
+cart.addEventListener("click", carts);
 const heroSection = document.querySelector(".body-text");
 const images = [
   "url('./img/EAR3.png')",
@@ -47,26 +46,26 @@ const counts = document.querySelectorAll(".count");
 const num = [1, 2, 3, 4, 5, 6];
 
 counts.forEach((count, index) => {
-    let counter = 0;
-    count.innerHTML = num[counter];
+  let counter = 0;
+  count.innerHTML = num[counter];
 
-    addButtons[index].addEventListener("click", function() {
-        if (counter < num.length - 1) {
-            counter++;
-            count.innerHTML = num[counter];
-        }
-    });
+  addButtons[index].addEventListener("click", function () {
+    if (counter < num.length - 1) {
+      counter++;
+      count.innerHTML = num[counter];
+    }
+  });
 
-    minusButtons[index].addEventListener("click", function() {
-        if (counter > 0) {
-            counter--;
-            count.innerHTML = num[counter];
-        }
-    });
+  minusButtons[index].addEventListener("click", function () {
+    if (counter > 0) {
+      counter--;
+      count.innerHTML = num[counter];
+    }
+  });
 });
 
-add.addEventListener("click", add_minus)
-minus.addEventListener("click", minus_minus)
+add.addEventListener("click", add_minus);
+minus.addEventListener("click", minus_minus);
 
 // let cartItems = [
 //   {
@@ -83,5 +82,4 @@ minus.addEventListener("click", minus_minus)
 
 // const singleitem = cartItems.find(item => item.productName == "speaker" )
 
-
-ScrollReveal().reveal('.headline');
+ScrollReveal().reveal(".headline");
