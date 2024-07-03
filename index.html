@@ -11,7 +11,11 @@
 
     <title>Lesson 2</title>
 
-   
+    <script
+      src="https://cdn.jsdelivr.net/gh/LieutenantPeacock/SmoothScroll@1.2.0/src/smoothscroll.min.js"
+      integrity="sha384-UdJHYJK9eDBy7vML0TvJGlCpvrJhCuOPGTc7tHbA+jHEgCgjWpPbmMvmd/2bzdXU"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -77,16 +81,18 @@
         </picture>
         <div class="cart__show" id="cart__show">
           <div class="cart-header">
-            <h2>CART (3)</h2>
+            <h2>CART (0)</h2>
             <a href="#">Remove all</a>
           </div>
           <div class="cart-item">
-            <div class="item-image">
-              <img src="./img/headset-3.png" alt="" />
-            </div>
-            <div class="item-details">
-              <h3>X99 MK II</h3>
-              <p>$2,999</p>
+            <div class="product-wrapper">
+              <!-- <div class="item-image">
+                <img src=${matchedItem.image} alt="" />
+              </div>
+              <div class="item-details">
+                <h3>${matchedItem.name}</h3>
+                <p>${matchedItem.price}</p>
+              </div> -->
             </div>
             <section class="add">
               <span class="minu">-</span>
@@ -99,7 +105,9 @@
             <a class="total">TOTAL</a>
             <h2>$2,999</h2>
           </div>
-         <a href="./checkout.html"> <button class="checkout-btn">CHECKOUT</button></a>
+          <a href="./checkout.html"
+            ><button class="checkout-btn">CHECKOUT</button></a
+          >
         </div>
       </div>
     </header>
@@ -112,7 +120,9 @@
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <a href="/Mark-II.html"><button class="buttons">See Product</button></a>
+          <a href="/Mark-II.html"
+            ><button class="buttons">See Product</button></a
+          >
         </div>
       </article>
 
@@ -233,6 +243,8 @@
         </section>
       </div>
     </footer>
+    <script src="./js/smoothscroll.js"></script>
+    <script src="./js/smoothscroll.min.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/index.js"></script>
   </body>

@@ -469,6 +469,22 @@ footer p {
   filter: brightness(0.2);
   background-color: black;
 }
+
+
+
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 0.7rem;
+}
+
+
 /*res for tab*/
 @media (min-device-width: 792px) and (max-device-width: 1024px) {
   .container {

@@ -64,8 +64,8 @@ counts.forEach((count, index) => {
   });
 });
 
-add.addEventListener("click", add_minus);
-minus.addEventListener("click", minus_minus);
+// addButtons.addEventListener("click", add_minus);
+// minusButtons.addEventListener("click", minus_minus);
 
 // let cartItems = [
 //   {
@@ -82,4 +82,9 @@ minus.addEventListener("click", minus_minus);
 
 // const singleitem = cartItems.find(item => item.productName == "speaker" )
 
-ScrollReveal().reveal(".headline");
+// ScrollReveal().reveal(".headline");
+
+_.defaults({ a: 1 }, { a: 3, b: 2 });
+// → { 'a': 1, 'b': 2 }
+_.partition([1, 2, 3, 4], (n) => n % 2);
+// → [[1, 3], [2, 4]]
