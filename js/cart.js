@@ -1,14 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const addToCartBtn = document.querySelector(".buttons");
+  const addToCartBtn = document.querySelector(".cart_btn");
   let cartShow = document.getElementById("cart__show");
   const cartItemCount = document.querySelector(".cart-header h2");
-  const cartItems = document.querySelector(".cart__show");
   const cartTotal = document.querySelector(".cart-pad h2");
   const removeAllBtn = document.querySelector(".cart-header a");
   const productImage = document.querySelector(".speak")?.src;
   let itemPrice = document.querySelector("#Price")?.textContent;
   let itemName = document.querySelector("#itemName")?.textContent;
-  let productWrapper = document.querySelector(".product-wrapper");
+  let cartIcon = document.getElementById("cart-icon");
+  
+ 
+
+
+  function carts() {
+    if (cartShow.style.display == "none") {
+      cartShow.style.display = "block";
+    } else {
+      cartShow.style.display = "none";
+    }
+  }
+  cartIcon.addEventListener("click", carts);
 
   // Clean and parse the item price
   if (itemPrice) {
@@ -98,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
         quantity: 1,
       };
 
-      const existingItem = cart.find((item) => item.id === product.id);
+      const existingItem = cart.find((item) => item.name === product.name);
       if (existingItem) {
         existingItem.quantity++;
       } else {
@@ -106,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       updateCart();
-      // Removed: cartShow.style.display = 'block';
+       cartShow.style.display = 'block';
     });
   }
 
@@ -118,4 +129,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initially update the cart to reflect any existing items
   updateCart();
+
+
+ 
+
+
+
+  // console.log(car);
+
 });

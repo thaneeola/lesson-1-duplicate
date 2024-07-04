@@ -1,6 +1,11 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 const input__text = document.querySelectorAll(".input__text");
 const button = document.querySelector("#checkout-btn"), ordered__section = document.querySelector("#ordered__section")
 let blurEffects = document.querySelector(".blurEffect");
+const cart_total = document.querySelector(".cart-pad h2")
+const checkoutTotal = document.querySelector("#total")
+const shipping = document.querySelector(".shipping")
 
 
 button.addEventListener("click", input__validation);
@@ -18,3 +23,9 @@ function input__validation() {
     });
 }
 
+  checkoutTotal.textContent = `${cart_total.textContent.join()}`
+  cart_total.textContent.
+ 
+ shipping.textContent = `${cart_total.textContent}`
+
+})

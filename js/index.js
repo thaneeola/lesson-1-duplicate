@@ -1,7 +1,5 @@
 let dive = document.getElementById("toggle");
 let link = document.getElementById("link");
-let cart = document.getElementById("cart-icon");
-let cart__show = document.getElementById("cart__show");
 let blurEffect = document.querySelector(".blurEffect");
 dive.addEventListener("click", show);
 
@@ -9,21 +7,12 @@ function show() {
   if (link.style.display == "flex") {
     link.style.display = "none";
     blurEffect.classList.remove("blur");
-  
   } else {
     link.style.display = "flex";
     blurEffect.classList.add("blur");
   }
 }
 
-function carts() {
-  if (cart__show.style.display == "none") {
-    cart__show.style.display = "block";
-  } else {
-    cart__show.style.display = "none";
-  }
-}
-cart.addEventListener("click", carts);
 const heroSection = document.querySelector(".body-text");
 const images = [
   "url('./img/EAR3.png')",
