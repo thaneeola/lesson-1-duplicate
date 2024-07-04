@@ -22,10 +22,9 @@ function input__validation() {
         }
     });
 }
-
-  checkoutTotal.textContent = `${cart_total.textContent.join()}`
-  cart_total.textContent.
- 
- shipping.textContent = `${cart_total.textContent}`
+checkoutTotal.textContent = cart_total.textContent.replace(/[^\d\.]/g, ''); // remove non-numeric characters
+const checkoutTotalValue = Number(checkoutTotal.textContent.replace('$', '')); // remove dollar sign
+const shippingValue = checkoutTotalValue / 7;
+shipping.textContent = `${shippingValue.toFixed(2)}`;
 
 })
