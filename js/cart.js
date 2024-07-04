@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Failed to parse item price:", document.querySelector("#Price").textContent);
     itemPrice = 0; // Set a default value or handle the error as appropriate
   }
-  
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -114,5 +113,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initially update the cart to reflect any existing items
   updateCart();
-  window.addEventListener("load", updateCart);
 });
