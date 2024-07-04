@@ -1,4 +1,3 @@
-//  alert("hello Our site is having issues with javascript");
 let dive = document.getElementById("toggle");
 let link = document.getElementById("link");
 let cart = document.getElementById("cart-icon");
@@ -10,7 +9,7 @@ function show() {
   if (link.style.display == "flex") {
     link.style.display = "none";
     blurEffect.classList.remove("blur");
-    console.log(blurEffect);
+  
   } else {
     link.style.display = "flex";
     blurEffect.classList.add("blur");
@@ -84,7 +83,7 @@ counts.forEach((count, index) => {
 
 // ScrollReveal().reveal(".headline");
 
-_.defaults({ a: 1 }, { a: 3, b: 2 });
+// _.defaults({ a: 1 }, { a: 3, b: 2 });
 // → { 'a': 1, 'b': 2 }
-_.partition([1, 2, 3, 4], (n) => n % 2);
+// _.partition([1, 2, 3, 4], (n) => n % 2);
 // → [[1, 3], [2, 4]]

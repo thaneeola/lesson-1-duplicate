@@ -5,18 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartItems = document.querySelector(".cart__show");
   const cartTotal = document.querySelector(".cart-pad h2");
   const removeAllBtn = document.querySelector(".cart-header a");
-  const productImage = document.querySelector(".speak").src;
-  let itemPrice = document.querySelector("#Price").textContent;
-  let itemName = document.querySelector("#itemName").textContent;
+  const productImage = document.querySelector(".speak")?.src;
+  let itemPrice = document.querySelector("#Price")?.textContent;
+  let itemName = document.querySelector("#itemName")?.textContent;
   let productWrapper = document.querySelector(".product-wrapper");
 
   // Clean and parse the item price
-  itemPrice = itemPrice.replace(/[^\d.-]/g, ''); // Remove any non-numeric characters except decimal point and minus sign
-  itemPrice = parseFloat(itemPrice);
-
-  if (isNaN(itemPrice)) {
-    console.error("Failed to parse item price:", document.querySelector("#Price").textContent);
-    itemPrice = 0; // Set a default value or handle the error as appropriate
+  if (itemPrice) {
+    itemPrice = itemPrice.replace(/[^\d.-]/g, ""); // Remove any non-numeric characters except decimal point and minus sign
+    itemPrice = parseFloat(itemPrice);
+    if (isNaN(itemPrice)) {
+      console.error(
+        "Failed to parse item price:",
+        document.querySelector("#Price").textContent
+      );
+      itemPrice = 0; // Set a default value or handle the error as appropriate
+    }
   }
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -29,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     cartItemCount.textContent = `CART (${totalItems})`;
-    cartTotal.textContent = `$${totalPrice.toFixed(2)}`; // Added toFixed(2) for consistent decimal places
+    cartTotal.textContent = `$${totalPrice}`;
 
     // Remove existing cart items
     const existingItems = cartShow.querySelectorAll(".cart-item");
@@ -38,22 +42,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add updated cart items
     cart.forEach((item) => {
       const cartItemHTML = `
-      <div class="cart-item" data-id="${item.name}">
-        <div class="item-image">
-          <img src="${item.image}" alt="${item.name}" />
-        </div>
-        <div class="item-details">
-          <h3>${item.name}</h3>
-          <p>$${item.price.toFixed(2)}</p>
-        </div>
-        <section class="add">
-          <span class="minu">-</span>
-          <p class="count">${item.quantity}</p>
-          <span class="plus">+</span>
-        </section>
-      </div>
-    `;
-
+            <div class="cart-item" data-id="${item.id}">
+              <div class="item-image">
+                <img src="${item.image}" alt="${item.name}" />
+              </div>
+              <div class="item-details">
+                <h3>${item.name}</h3>
+                <p>$${item.price}</p>
+              </div>
+              <section class="add">
+                <span class="minu">-</span>
+                <p class="count">${item.quantity}</p>
+                <span class="plus">+</span>
+              </section>
+            </div>
+          `;
       cartShow.insertAdjacentHTML("afterbegin", cartItemHTML);
     });
 
@@ -75,11 +78,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateQuantity(id, change) {
-    const item = cart.find((item) => item.name === id);
+    const item = cart.find((item) => item.id === id);
     if (item) {
       item.quantity += change;
       if (item.quantity <= 0) {
-        cart = cart.filter((item) => item.name !== id);
+        cart = cart.filter((item) => item.id !== id);
       }
       updateCart();
     }
@@ -88,13 +91,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (addToCartBtn) {
     addToCartBtn.addEventListener("click", () => {
       const product = {
+        id: "X99MK2",
         name: itemName,
-        price: itemPrice, // This now uses the cleaned and parsed itemPrice
+        price: itemPrice,
         image: productImage,
         quantity: 1,
       };
 
-      const existingItem = cart.find((item) => item.name === product.name);
+      const existingItem = cart.find((item) => item.id === product.id);
       if (existingItem) {
         existingItem.quantity++;
       } else {
@@ -102,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       updateCart();
+      // Removed: cartShow.style.display = 'block';
     });
   }
 

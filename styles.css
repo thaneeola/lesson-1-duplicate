@@ -4,15 +4,13 @@
   margin: 0;
   padding: 0;
   font-family: "Manrope";
- 
 }
 html {
   scroll-behavior: smooth;
-   
 }
 body {
   cursor: default;
- 
+
   /* background-color: #F2F2F2; */
 }
 
@@ -30,7 +28,6 @@ header {
   left: 0;
   right: 0;
   z-index: 3;
-  
 }
 img {
   max-inline-size: 100%;
@@ -87,7 +84,6 @@ img {
   top: 5.5rem;
 
   display: none;
- 
 
   /* margin-inline-end: 1rem; */
 }
@@ -253,7 +249,6 @@ img {
   padding-inline: 24px;
 }
 
-
 .text a {
   text-decoration: none;
   color: #000000;
@@ -263,14 +258,13 @@ img {
   color: #fbaf85;
 }
 .text:hover {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid #fbaf85;
 }
 .text:hover img {
-  transition:1s ease-in-out;
+  transition: 1s ease-in-out;
   transform: scale(1.3);
 }
-
 
 .new-tabs:hover a {
   color: #fbaf85;
@@ -465,13 +459,10 @@ footer p {
   align-items: center;
   gap: 20px;
 }
-.blur.blurEffect {
+.blur {
   filter: brightness(0.2);
   background-color: black;
 }
-
-
-
 
 ::-webkit-scrollbar {
   width: 0.6rem;
@@ -480,10 +471,9 @@ footer p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: hsl(0, 2%, 37%);
   border-radius: 0.7rem;
 }
-
 
 /*res for tab*/
 @media (min-device-width: 792px) and (max-device-width: 1024px) {

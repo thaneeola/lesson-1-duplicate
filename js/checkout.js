@@ -1,6 +1,6 @@
 const input__text = document.querySelectorAll(".input__text");
 const button = document.querySelector("#checkout-btn"), ordered__section = document.querySelector("#ordered__section")
-let blurEffect = document.querySelector(".blurEffect");
+let blurEffects = document.querySelector(".blurEffect");
 
 
 button.addEventListener("click", input__validation);
@@ -13,7 +13,7 @@ function input__validation() {
             
         } else{
             ordered__section.style.display = "flex"
-            blurEffect.classList.add("blur");
+            blurEffects.classList.add("blur");
         }
     });
 }
