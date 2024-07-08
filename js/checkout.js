@@ -38,20 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Radio button event listeners
-  const radio1 = document.querySelector('radio1');
-  const radio2 = document.querySelector('radio2');
-  const lastFieldset = document.getElementById('last_fieldset');
-  const paymentDiv = document.getElementById('payment');
-
-  radio1.addEventListener('click', () => {
-    lastFieldset.style.display = 'block';
-    paymentDiv.style.display = 'none';
-  });
-
-  radio2.addEventListener('click', () => {
-    lastFieldset.style.display = 'none';
-    paymentDiv.style.display = 'block';
-  });
+ 
 
   // Calculate totals
   checkoutTotal.textContent = `$${Number(cart_total.textContent.replace(/[^\d\.]/g, ""))}`;
