@@ -71,8 +71,8 @@
             <a href="earphones.html" class="first__link">EARPHONES</a>
           </li>
         </ul>
-        <picture class="cart">
-          <img src="./img/cart.png" alt="cart-icon" id="cart-icon" />
+        <picture class="cart" id="cart-icon">
+          <img src="./img/cart.png" alt="cart-icon" />
         </picture>
         <div class="cart__show" id="cart__show">
           <div class="cart-header">
@@ -197,7 +197,7 @@
 
             <p class="p__text">Billing Details</p>
 
-            <div class="payment__method">
+            <div class="payment__method" >
               <p>Payment method</p>
               <div>
                 <label for="radio1 radio" class="radio1">
@@ -211,7 +211,7 @@
               </div>
             </div>
 
-            <fieldset class="last_fieldset">
+            <fieldset class="last_fieldset" id="last_fieldset">
               <label for="e-Money">
                 <p>e-Money Number</p>
                 <input
@@ -233,7 +233,7 @@
               </label>
             </fieldset>
 
-            <div class="payment">
+            <div class="payment" id="payment">
               <img src="./img/Shape.png" alt="payment" />
               <p>
                 The ‘Cash on Delivery’ option enables you to pay in cash when
@@ -249,8 +249,6 @@
           <div class="summary">
             <h2>SUMMARY</h2>
 
-           
-
             <div class="cart-header cart-pad">
               <a class="total">TOTAL</a>
               <h2 id="total"></h2>
@@ -265,80 +263,68 @@
             </div>
             <div class="cart-header cart-pad">
               <a class="total">GRAND TOTAL</a>
-              <h2 class="last__h2">$5,446</h2>
+              <h2 class="last__h2 grandTotal"></h2>
             </div>
             <button class="checkout-btn" id="checkout-btn">CONTINUE</button>
           </div>
         </section>
       </section>
     </div>
-    
 
-      <footer>
-        <section class="logo">
-          <picture
-            ><img src="./img/audiophile 2.png" alt="site-logo"
-          /></picture>
-          <div class="footer-link">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="headphone.html">HEADPHONES</a></li>
-              <li><a href="speaker.html">SPEAKERS</a></li>
-              <li><a href="#">EARPHONES</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <p class="oyin-p">
-          Audiophile is an all in one stop to fulfill your audio needs . We're a
-          small team of music lovers and sound specialists who are devoted to
-          helping you get the most out of personal audio. Come and visit our
-          demo facility - we’re open 7 days a week.
-        </p>
-        <div class="footer-icon">
-          <p>Copyright 2021. All Rights Reserved</p>
-          <section class="icons">
-            <a href="https://dribbble.com/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
-          </section>
+    <footer>
+      <section class="logo">
+        <picture><img src="./img/audiophile 2.png" alt="site-logo" /></picture>
+        <div class="footer-link">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="headphone.html">HEADPHONES</a></li>
+            <li><a href="speaker.html">SPEAKERS</a></li>
+            <li><a href="#">EARPHONES</a></li>
+          </ul>
         </div>
-      </footer>
-    
+      </section>
+
+      <p class="oyin-p">
+        Audiophile is an all in one stop to fulfill your audio needs . We're a
+        small team of music lovers and sound specialists who are devoted to
+        helping you get the most out of personal audio. Come and visit our demo
+        facility - we’re open 7 days a week.
+      </p>
+      <div class="footer-icon">
+        <p>Copyright 2021. All Rights Reserved</p>
+        <section class="icons">
+          <a href="https://www.facebook.com/profile.php?id=100061611135439"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://x.com/Oyinlola1414?t=-rD9DAxLqzKL4fHw31oj3w&s=09"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/thanee_ola?igsh=YzljYTk1ODg3Zg==">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+        </section>
+      </div>
+    </footer>
+
     <section class="ordered__section" id="ordered__section">
       <picture><img src="./img/checkmark.png" alt="checkmark" /></picture>
       <h1 class="ordered__header">THANK YOU FOR YOUR ORDER</h1>
       <p>You will receive an email confirmation shortly.</p>
 
       <div class="ordered__list">
-        <div class="what__ordered">
-          <div class="summary-item">
-            <div class="item-image">
-              <img src="./img/headset-2.png" alt="" />
-            </div>
-            <div class="item-details">
-              <h3>X99 MK II</h3>
-              <p>$2,999</p>
-            </div>
-            <p>1x</p>
-          </div>
-        </div>
-
         <div class="ordered__grand-total">
           <h3>GRAND TOTAL</h3>
-          <h2>$ 5,446</h2>
+          <h2 class="grandTotal" id="continue-btn"></h2>
         </div>
       </div>
-     <a href="./index.html">  <button class="checkout-btn">BACK TO HOME</button></a>
-     <div></div>
+      <a href="./index.html">
+        <button class="checkout-btn">BACK TO HOME</button></a
+      >
+      <div></div>
     </section>
-
 
     <script src="./js/cart.js"></script>
     <script src="./js/checkout.js"></script>
     <script src="./js/index.js"></script>
-    
   </body>
 </html>
