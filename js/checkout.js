@@ -50,4 +50,25 @@ document.addEventListener("DOMContentLoaded", function () {
   grandTotals.forEach((grandtotal) => {
     grandtotal.textContent = `$${(checkoutTotalValue + shippingValue + 1079).toFixed(2)}`;
   });
+
+
+
+
+
+  const payment= document.querySelector("#payment");
+  const e_pin = document.querySelector("#last_fieldset");
+  const radio1= document.querySelector(".radio1")
+  const radio2 = document.querySelector(".radio2")
+  
+
+radio1.addEventListener("click",()=>{
+    payment.style.display="none"
+    e_pin.style.display = "flex"
+})
+
+  radio2.addEventListener("click", ()=>{
+    payment.style.display="flex"
+    e_pin.style.display = "none"
+  })
+
 });

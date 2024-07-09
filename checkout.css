@@ -139,8 +139,8 @@ label p {
   outline: none;
 }
 
-input[type="radio"]:checked,
-input[type="checkbox"]:checked {
+input[type="radio"]:checked
+{
   accent-color: #d87d4a;
 }
 
@@ -159,7 +159,9 @@ input[type="checkbox"]:checked {
   gap: 32px;
   margin-block: 30px;
 }
-
+.payment img{
+  height: 50px;
+}
 .payment p {
   font-weight: 500;
   font-size: 15px;
