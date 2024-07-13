@@ -52,6 +52,43 @@ counts.forEach((count, index) => {
   });
 });
 
+import { ScrollMagic } from 'scrollmagic';
+
+// Create a ScrollMagic controller
+const controller = new ScrollMagic.Controller();
+
+// Select the elements you want to animate
+const hero = document.querySelector('.body-text');
+const containers = document.querySelectorAll('.scroll-container');
+
+// Create a scene for the hero section
+new ScrollMagic.Scene({
+  triggerElement: hero,
+  triggerHook: 0.5, // trigger when the element is 50% in view
+  duration: 1000, // animation duration
+})
+.setClassToggle(hero, 'animate-hero') // add class "animate-hero" to heroSection
+.addTo(controller);
+
+// Create scenes for the containers
+containers.forEach((container) => {
+  new ScrollMagic.Scene({
+    triggerElement: container,
+    triggerHook: 0.5, // trigger when the element is 50% in view
+    duration: 1000, // animation duration
+  })
+  .setClassToggle(container, 'animate-container') // add class "animate-container" to container
+  .addTo(controller);
+});
+
+// Add a global scroll handler
+controller.scrollTo(function (newScrollPos) {
+  console.log(`Scrolling to ${newScrollPos}...`);
+});
+
+// Add a throttle to the global scroll handler
+const throttledScrollHandler = _.throttle(controller.scrollTo, 200);
+window.addEventListener('scroll', throttledScrollHandler);
 // addButtons.addEventListener("click", add_minus);
 // minusButtons.addEventListener("click", minus_minus);
 

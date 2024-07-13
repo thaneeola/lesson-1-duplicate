@@ -12,18 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function input__validation(event) {
     event.preventDefault();
-
+  
     let allValid = true;
-
-    input__text.forEach((input) => {
-      if (input.value === "" || input.value == null) {
-        input.style.border = "2px solid #CD2C2C";
-        allValid = false;
-      } else {
-        input.style.border = ""; // Reset border if input is valid
+  
+    input__text.forEach((input, index) => {
+      if (index < input__text.length - 2) { // exclude the last two input fields
+        if (input.value === "" || input.value == null) {
+          input.style.border = "2px solid #CD2C2C";
+          allValid = false;
+        } else {
+          input.style.border = ""; // Reset border if input is valid
+        }
       }
     });
-
+  
     if (allValid) {
       ordered__section.style.display = "flex";
       blurEffects.classList.add("blur");

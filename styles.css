@@ -14,6 +14,8 @@ body {
   /* background-color: #F2F2F2; */
 }
 
+
+
 header {
   position: relative;
 }
@@ -210,11 +212,26 @@ img {
 .body-button {
   background-color: white;
   display: flex;
-
   gap: 20px;
   padding-block: 100px;
   justify-content: center;
 }
+
+
+
+.animate-hero {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 1s, opacity 1s;
+}
+
+.animate-container {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: transform 1s, opacity 1s;
+}
+
+
 .main-body {
   padding-inline: 24px;
 }
