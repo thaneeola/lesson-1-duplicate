@@ -8,8 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let itemPrice = document.querySelector("#Price")?.textContent;
   let itemName = document.querySelector("#itemName")?.textContent;
   let cartIcon = document.getElementById("cart-icon");
+  const cartCountSpan = document.querySelector('.cart-count');
+
+
+
   
- 
 
 
   function carts() {
@@ -45,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cartItemCount.textContent = `CART (${totalItems})`;
     cartTotal.textContent = `$${totalPrice}`;
+    cartCountSpan.innerHTML = totalItems
 
     // Remove existing cart items
     const existingItems = cartShow.querySelectorAll(".cart-item");

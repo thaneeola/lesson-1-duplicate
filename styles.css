@@ -14,14 +14,13 @@ body {
   /* background-color: #F2F2F2; */
 }
 
-
-
 header {
   position: relative;
 }
 
 .container {
   display: flex;
+  place-items: center;
   border-bottom: 2px solid rgba(255, 255, 255, 1);
   padding-block: 32px;
   background-color: #141414;
@@ -35,8 +34,36 @@ img {
   max-inline-size: 100%;
 }
 
-.cart {
+.cart_section {
   margin-left: auto;
+  display: flex;
+  place-items: center;
+  gap: 20px;
+}
+
+.cart i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.cart:hover i{
+  color: #d87d4a;
+}
+.login__img img{
+  width: 50px;
+  border-radius: 50%;
+  
+ 
+}
+ .cart .cart-count {
+  position: absolute;
+  margin-left: -25px;
+  margin-top: -17px;
+  background-color: #d87d4a; /* red background */
+  color: #FFFFFF; /* white text */
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
 }
 
 .home__link {
@@ -63,17 +90,38 @@ img {
 }
 
 .container ul a:hover,
-.shop:hover {
+.shop:hover,
+.container .home_active {
   color: #d87d4a;
 }
 
 .shop {
   color: black;
-}
-.shop samp {
-  color: #d87d4a;
+  animation: size 1.5s infinite ease-in-out;
 }
 
+.shop samp {
+  color: #d87d4a;
+ 
+  
+}
+
+@keyframes size {
+  from {
+    font-size: 15px;
+  }
+  to {
+    font-size: 18px;
+  }
+}
+.login a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  background-color: #d87d4a;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
 .cart__show {
   background-color: white;
   border-radius: 8px;
@@ -170,7 +218,7 @@ img {
   gap: 24px;
   justify-content: center;
 
-  align-items: center;
+  /* align-items: center; */
   color: #f1f1f1;
 }
 .oyin h4 {
@@ -217,8 +265,6 @@ img {
   justify-content: center;
 }
 
-
-
 .animate-hero {
   transform: translateY(0);
   opacity: 1;
@@ -230,7 +276,6 @@ img {
   opacity: 1;
   transition: transform 1s, opacity 1s;
 }
-
 
 .main-body {
   padding-inline: 24px;
@@ -509,6 +554,9 @@ footer p {
     height: 340px;
     background-color: #ffff;
     padding-inline: 0;
+  }
+  .container .home_active {
+    color: transparent;
   }
 
   .cart__show {
@@ -806,6 +854,9 @@ footer p {
   }
   .container ul .first__link {
     display: none;
+  }
+  .container .home_active {
+    color: transparent;
   }
 
   .container ul {

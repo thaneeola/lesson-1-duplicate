@@ -19,10 +19,9 @@
           <img src="./img/Group.png" alt="toggle"
         /></picture>
         <picture class="site-logo"
-          ><img src="./img/audiophile 2.png" alt="site-logo"
-        /></picture>
+          >   <a href="./landing.html"><img src="./img/audiophile 2.png" alt="site-logo"/></a></picture>
         <ul id="link">
-          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./landing.html">HOME</a></li>
 
           <li>
             <a href="headphone.html" class="first__link">HEADPHONES</a>
@@ -54,7 +53,7 @@
                 >
               </div>
             </section>
-            <a href="speaker.html" class="first__link">SPEAKERS</a>
+            <a href="speaker.html" class="first__link home_active">SPEAKERS</a>
           </li>
           <li>
             <section class="new-tab">
@@ -71,9 +70,15 @@
             <a href="earphones.html" class="first__link">EARPHONES</a>
           </li>
         </ul>
-        <picture class="cart" id="cart-icon">
-          <img src="./img/cart.png" alt="cart-icon" />
-        </picture>
+        <div class="cart_section">
+          <picture class="cart" id="cart-icon">
+           <i class="fa-solid fa-cart-shopping"></i>
+           <span class="cart-count" id="cart-count"></span>
+         </picture>
+         <picture class="login login__img" id="login-icon">
+             <img src="./img/image.png" alt="">
+         </picture>    
+         </div>
         <div class="cart__show" id="cart__show">
           <div class="cart-header">
             <h2>CART (3)</h2>
@@ -254,10 +259,10 @@
         <picture><img src="./img/audiophile 2.png" alt="site-logo" /></picture>
         <div class="footer-link">
           <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="./landing.html">Home</a></li>
             <li><a href="headphone.html">HEADPHONES</a></li>
             <li><a href="speaker.html">SPEAKERS</a></li>
-            <li><a href="#">EARPHONES</a></li>
+            <li><a href="./earphones.html">EARPHONES</a></li>
           </ul>
         </div>
       </section>
