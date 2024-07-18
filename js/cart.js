@@ -10,11 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let cartIcon = document.getElementById("cart-icon");
   const cartCountSpan = document.querySelector('.cart-count');
 
-
-
-  
-
-
   function carts() {
     if (cartShow.style.display == "none") {
       cartShow.style.display = "block";
@@ -26,14 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Clean and parse the item price
   if (itemPrice) {
-    itemPrice = itemPrice.replace(/[^\d.-]/g, ""); // Remove any non-numeric characters except decimal point and minus sign
+    itemPrice = itemPrice.replace(/[^\d.-]/g, ""); 
     itemPrice = parseFloat(itemPrice);
     if (isNaN(itemPrice)) {
       console.error(
         "Failed to parse item price:",
         document.querySelector("#Price").textContent
       );
-      itemPrice = 0; // Set a default value or handle the error as appropriate
+      itemPrice = 0; 
     }
   }
 
@@ -121,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       updateCart();
-       cartShow.style.display = 'block';
+      cartShow.style.display = 'block';
     });
   }
 
@@ -131,14 +126,12 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCart();
   });
 
-  // Initially update the cart to reflect any existing items
   updateCart();
 
-
- 
-
-
-
-  // console.log(car);
-
+  window.onclick = function (event) {
+    if (!cartShow.contains(event.target) && event.target !== cartIcon && !cartIcon.contains(event.target) && cartShow.style.display === "block") {
+      cartShow.style.display = "none";
+    }
+  };
 });
+
