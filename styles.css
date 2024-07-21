@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Manrope";
-  transition: all .2s linear;
+
 }
 html {
   scroll-behavior: smooth;
@@ -183,6 +183,41 @@ img {
 .cart-pad {
   margin-top: 20px;
 }
+
+#preferences {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 5px;
+}
+
+#preferences option {
+  padding: 5px;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logout-btn:hover {
+  background-color: #c9302c;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .total {
   text-align: right;
   font-weight: bold;
@@ -619,7 +654,7 @@ footer p {
     margin-inline-end: 32px;
   }
   .site-logo {
-    margin: auto;
+    margin-left: 30px;
   }
   .container ul .first__link {
     display: none;
@@ -931,7 +966,7 @@ footer p {
   }
 
   .site-logo {
-    margin: auto;
+    margin-left: 20px;
   }
 
   .text {

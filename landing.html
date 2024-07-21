@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Audiophile</title>
+    <link rel="shortcut icon" href="./img/falvicon.png" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -18,7 +19,7 @@
             <img src="./img/Group.png" alt="toggle"/>
         </picture>
         <picture class="site-logo">
-            <a href="./landing.html"><img src="./img/audiophile 2.png" alt="site-logo"/></a>
+          <a href="./landing.html"><img src="./img/my logo 2.png" alt="site-logo"/></a>
         </picture>
         <ul id="link">
             <li><a href="./landing.html" class="home_active">HOME</a></li>
@@ -64,7 +65,55 @@
 
         </picture>    
         </div>
-       
+
+
+        <div id="settingsModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Profile Settings</h2>
+            <form id="profileForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone">
+              
+              <label for="address">Shipping Address:</label>
+              <textarea id="address" name="address"></textarea>
+              
+              <label for="preferences">Audio Preferences:</label>
+              <select id="preferences" name="preferences" multiple>
+                <option value="headphones">Headphones</option>
+                <option value="speakers">Speakers</option>
+                <option value="earphones">Earphones</option>
+                <option value="hi-fi">Hi-Fi Systems</option>
+              </select>
+              
+              <label for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to newsletter
+              </label>
+              
+              <label for="currentPassword">Current Password:</label>
+              <input type="password" id="currentPassword" name="currentPassword">
+              
+              <label for="newPassword">New Password:</label>
+              <input type="password" id="newPassword" name="newPassword">
+              
+              <label for="confirmPassword">Confirm New Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword">
+              
+              <button type="submit">Save Changes</button>
+            </form>
+            <button id="logoutButton" class="logout-btn">Logout</button>
+          </div>
+        </div>
+
+
+
         <div class="cart__show" id="cart__show">
             <div class="cart-header">
                 <h2>CART (0)</h2>
@@ -195,7 +244,7 @@
 
     <footer>
       <section class="logo">
-        <picture><img src="./img/audiophile 2.png" alt="site-logo" /></picture>
+        <picture><a href="./landing.html"><img src="./img/my logo 2.png" alt="site-logo"/></a></picture>
         <div class="footer-link">
           <ul>
             <li><a href="./landing.html">Home</a></li>
@@ -213,7 +262,7 @@
         facility - we’re open 7 days a week.
       </p>
       <div class="footer-icon">
-        <p>Copyright 2024. All Rights Reserved</p>
+        <p>Copyright thanee_ola. All Rights Reserved</p>
         <section class="icons">
           <a href="https://www.facebook.com/profile.php?id=100061611135439"
             ><i class="fa-brands fa-facebook"></i

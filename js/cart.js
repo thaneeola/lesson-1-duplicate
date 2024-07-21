@@ -128,10 +128,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateCart();
 
-  window.onclick = function (event) {
-    if (!cartShow.contains(event.target) && event.target !== cartIcon && !cartIcon.contains(event.target) && cartShow.style.display === "block") {
-      cartShow.style.display = "none";
-    }
-  };
+  // document.addEventListener("click", function (event) {
+  //   if (!cartShow.contains(event.target) && event.target !== cartIcon && !cartIcon.contains(event.target) && cartShow.style.display === "block") {
+  //     cartShow.style.display = "none";
+  //   }
+  // });
 });
 
