@@ -55,12 +55,10 @@
             </li>
         </ul>
         <div class="cart_section">
-          
           <picture class="login" id="login-icon">
               <a href="./login.html" >Login</a>
           </picture>
         </div>
-        
         
         <div class="cart__show" id="cart__show">
             <div class="cart-header">
@@ -69,7 +67,6 @@
             </div>
             <div class="cart-item">
                 <div class="product-wrapper">
-                  
                 </div>
                 <section class="add">
                     <span class="minu">-</span>
@@ -79,12 +76,11 @@
             </div>
             <div class="cart-header cart-pad">
                 <a class="total">TOTAL</a>
-                <h2>$2,999</h2>
+                <h2>$0</h2>
             </div>
             <a href="./checkout.html"><button class="checkout-btn">CHECKOUT</button></a>
         </div>
     </div>
-    
     </header>
     <div class="blurEffect">
       <article class="body-text">
@@ -95,9 +91,7 @@
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <a href="/Mark-II.html"
-            ><button class="buttons">See Product</button></a
-          >
+          <a href="/Mark-II.html"><button class="buttons">See Product</button></a>
         </div>
       </article>
 
@@ -105,41 +99,25 @@
         <section class="body-button">
           <section class="new-tabs">
             <div class="text">
-              <picture
-                ><img
-                  src="./img/image-removebg-preview(41).png"
-                  alt="toggle-icon"
-              /></picture>
+              <picture><img src="./img/image-removebg-preview(41).png" alt="toggle-icon"/></picture>
               <p>HEADPHONES</p>
-              <a href="./headphone.html"
-                ><p class="shop">shop <samp>></samp></p></a
-              >
+              <a href="./headphone.html"><p class="shop">shop <samp>></samp></p></a>
             </div>
           </section>
 
           <section class="new-tabs">
             <div class="text">
-              <picture
-                ><img
-                  src="./img/image-removebg-preview(38).png"
-                  alt="toggle-icon"
-              /></picture>
+              <picture><img src="./img/image-removebg-preview(38).png" alt="toggle-icon"/></picture>
               <p>SPEAKERS</p>
-              <a href="./speaker.html"
-                ><p class="shop">shop <samp>></samp></p></a
-              >
+              <a href="./speaker.html"><p class="shop">shop <samp>></samp></p></a>
             </div>
           </section>
 
           <section class="new-tabs">
             <div class="text">
-              <picture
-                ><img src="./img/Group 5.png" alt="toggle-icon"
-              /></picture>
+              <picture><img src="./img/Group 5.png" alt="toggle-icon"/></picture>
               <p>EARPHONES</p>
-              <a href="./earphones.html"
-                ><p class="shop">shop <samp>></samp></p></a
-              >
+              <a href="./earphones.html"><p class="shop">shop <samp>></samp></p></a>
             </div>
           </section>
         </section>
@@ -153,9 +131,7 @@
                 Upgrade to premium speakers that are phenomenally built to
                 deliver truly remarkable sound.
               </p>
-              <a href="./zx9.html"
-                ><button class="button">See Product</button></a
-              >
+              <a href="./zx9.html"><button class="button">See Product</button></a>
             </div>
           </div>
         </section>
@@ -207,25 +183,55 @@
         Audiophile is an all in one stop to fulfill your audio needs . We're a
         small team of music lovers and sound specialists who are devoted to
         helping you get the most out of personal audio. Come and visit our demo
-        facility - we’re open 7 days a week.
+        facility - we're open 7 days a week.
       </p>
       <div class="footer-icon">
         <p>Copyright thanee_ola. All Rights Reserved</p>
         <section class="icons">
-          <a href="https://www.facebook.com/profile.php?id=100061611135439"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://x.com/Oyinlola1414?t=-rD9DAxLqzKL4fHw31oj3w&s=09"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
-          <a href="https://www.instagram.com/thanee_ola?igsh=YzljYTk1ODg3Zg==">
-            <i class="fa-brands fa-instagram"></i
-          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100061611135439"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/Oyinlola1414?t=-rD9DAxLqzKL4fHw31oj3w&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/thanee_ola?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
         </section>
       </div>
     </footer>
+
+    
+    <audio id="pageChangeSound">
+      <source src="./img/thaneeola.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="./js/login_message.js"></script>
     <script src="./js/cart.js"></script>
     <script src="./js/index.js"></script>
+    
+    <script>
+      // Function to play audio
+      function playAudio() {
+        var audio = document.getElementById('pageChangeSound');
+        audio.play().catch(function(error) {
+          console.log("Autoplay failed:", error);
+          // If autoplay fails, set up click listener as fallback
+          document.addEventListener('click', function() {
+            audio.play();
+            this.removeEventListener('click', arguments.callee);
+          });
+        });
+      }
+
+      // Attempt to play audio when the page loads
+      window.addEventListener('load', playAudio);
+    </script>
+
+    <audio id="pageChangeSound" autoplay muted>
+      <source src="./img/thaneeola.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script>
+      window.addEventListener('load', function() {
+        var audio = document.getElementById('pageChangeSound');
+        audio.muted = false;
+        audio.play();
+      });
+    </script>
   </body>
 </html>
